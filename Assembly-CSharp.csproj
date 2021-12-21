@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F1EBEA9A-4A3D-2CF4-E5F8-663863B4D93D}</ProjectGuid>
+    <ProjectGuid>{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -751,39 +751,39 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ProceduralToolkit.Editor.csproj">
-      <Project>{FB676C83-FEE2-650B-7343-08C870FAB7FF}</Project>
+      <Project>{50DEC46E-826C-3BF4-A4E4-59B8E71414D4}</Project>
       <Name>ProceduralToolkit.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="ProceduralToolkit.csproj">
-      <Project>{A65E3E86-9EDC-B4A5-426F-AFC169F1DE0E}</Project>
+      <Project>{9E77CAA0-1FA1-5F4C-CD39-2AE7861E7995}</Project>
       <Name>ProceduralToolkit</Name>
     </ProjectReference>
     <ProjectReference Include="ProceduralToolkit.FastNoiseLib.csproj">
-      <Project>{E65EB03B-26AA-CAD4-F66B-E5D3A4CE7393}</Project>
+      <Project>{1932CFC5-DD0D-5714-ACEE-EE2AB868AA75}</Project>
       <Name>ProceduralToolkit.FastNoiseLib</Name>
     </ProjectReference>
     <ProjectReference Include="ProceduralToolkit.Samples.csproj">
-      <Project>{7CA66746-BE1F-EF51-62A8-CD70D2C856E6}</Project>
+      <Project>{B1B83558-06FC-974A-2CA9-753EF00CAEAF}</Project>
       <Name>ProceduralToolkit.Samples</Name>
     </ProjectReference>
     <ProjectReference Include="ProceduralToolkit.LibTessDotNet.csproj">
-      <Project>{C93CC145-CE9F-1327-192F-E892F99073D7}</Project>
+      <Project>{25A43168-4755-6735-1411-30532F52A2B6}</Project>
       <Name>ProceduralToolkit.LibTessDotNet</Name>
     </ProjectReference>
     <ProjectReference Include="ProceduralToolkit.Samples.Chairs.Editor.csproj">
-      <Project>{B64D766C-4F87-EF2C-8630-5B40764C7614}</Project>
+      <Project>{5EE7DFCA-0080-9AEC-77CA-7B98D73294DB}</Project>
       <Name>ProceduralToolkit.Samples.Chairs.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="ProceduralToolkit.Samples.Buildings.Editor.csproj">
-      <Project>{DC74B51F-2071-15F8-8B86-D41396E0FEA2}</Project>
+      <Project>{FEA9519F-0AD7-566F-4903-329E2D72D1A3}</Project>
       <Name>ProceduralToolkit.Samples.Buildings.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="ProceduralToolkit.ClipperLib.csproj">
-      <Project>{9A2A31FD-FE52-CFB9-752D-B5F08BF8184C}</Project>
+      <Project>{5E513C18-5E18-36CD-B705-09F46AD11151}</Project>
       <Name>ProceduralToolkit.ClipperLib</Name>
     </ProjectReference>
     <ProjectReference Include="ProceduralToolkit.Samples.LowPolyTerrain.Editor.csproj">
-      <Project>{2CE9F4BA-DE4B-9D28-93BB-A1849C929D5D}</Project>
+      <Project>{EFCEF212-EFC3-8BF8-0796-0A53CBCFAA0D}</Project>
       <Name>ProceduralToolkit.Samples.LowPolyTerrain.Editor</Name>
     </ProjectReference>
   </ItemGroup>
