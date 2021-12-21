@@ -6,6 +6,7 @@ public class PlaceItem : MonoBehaviour
 {
     public InventoryObject inventory;
     public Transform placeLocation;
+    public LayerMask mask;
     public Transform mainCamera;
     public Transform levelTransform;
 
@@ -37,7 +38,23 @@ public class PlaceItem : MonoBehaviour
                 placedItem.transform.localEulerAngles = new Vector3(placedItemTransform.localEulerAngles.x, placedItem.transform.localEulerAngles.y, placedItemTransform.localEulerAngles.z);
                 placedItem.transform.SetParent(levelTransform, true);
 
-                for(int i = 0; i < inventory.Container.Items.Count; i++)
+                float radius = placedItem.GetComponent<Collider>().bounds.extents.y;
+
+                RaycastHit hit;
+
+                Ray ray = new Ray(placedItem.transform.position + Vector3.up * 100, Vector3.down);
+
+                var raycast = Physics.Raycast(ray, out hit, Mathf.Infinity, mask);
+
+                if (raycast)
+                {
+                    if (hit.collider != null)
+                    {
+                        placedItem.transform.position = new Vector3(placedItem.transform.position.x, hit.point.y + radius, placedItem.transform.position.z);
+                    }
+                }
+
+                for (int i = 0; i < inventory.Container.Items.Count; i++)
                 {
                     if(inventory.Container.Items[i].ID == HandItem.itemId)
                     {

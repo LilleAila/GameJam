@@ -40,8 +40,15 @@ public class TreeScript : MonoBehaviour
                 // Instantiate(woodItem, this.transform.position + new Vector3(0, itemYOffset, 0), Quaternion.identity);
                 inventory.AddItem(new Item(woodItemObject), Mathf.FloorToInt(Random.Range(1f, 7f)));
                 canChop = false;
-                Destroy(this.gameObject, 25.0f);
+
+                Invoke("DisableGravity", 5);
+                Destroy(this.gameObject, 60.0f);
             }
         }
+    }
+
+    void DisableGravity()
+    {
+        treeObject.GetComponent<Rigidbody>().useGravity = false;
     }
 }

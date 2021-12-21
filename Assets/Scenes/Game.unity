@@ -2194,6 +2194,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 32237d263fc976545b1b1a6740865df9, type: 2}
   placeLocation: {fileID: 888141769}
+  mask:
+    serializedVersion: 2
+    m_Bits: 1
   mainCamera: {fileID: 963194228}
   levelTransform: {fileID: 190259075}
 --- !u!1 &669444220
