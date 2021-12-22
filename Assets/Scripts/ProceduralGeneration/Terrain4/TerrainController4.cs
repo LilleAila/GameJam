@@ -26,6 +26,8 @@ public class TerrainController4 : MonoBehaviour
     [SerializeField]
     private int seed;
     [SerializeField]
+    private bool randomSeed;
+    [SerializeField]
     private GameObject[] placeableObjects;
     public GameObject[] PlaceableObjects { get { return placeableObjects; } }
     [SerializeField]
@@ -67,6 +69,8 @@ public class TerrainController4 : MonoBehaviour
 
     public void InitialLoad()
     {
+        if (randomSeed) seed = Mathf.FloorToInt(Random.Range(0f, 10000f));
+
         DestroyTerrain();
 
         Level = new GameObject("Level").transform;

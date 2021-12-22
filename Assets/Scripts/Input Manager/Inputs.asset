@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3dad223a9f7d8438cd22bf7f0e1627, type: 3}
+  m_Name: Inputs
+  m_EditorClassIdentifier: 
+  inputs:
+  - name: Jump
+    keys: 20000000
+  - name: Sprint
+    keys: 3201000030010000
+  - name: Inventory
+    keys: 6500000009000000
+  - name: Pause
+    keys: 1b000000
+  - name: Submit
+    keys: 0d000000
+  axes:
+  - name: Forward
+    axes:
+    - positive: 119
+      negative: 115
+  - name: Side
+    axes:
+    - positive: 100
+      negative: 97

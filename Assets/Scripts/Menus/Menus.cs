@@ -23,7 +23,7 @@ public class Menus : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(InputManager.GetKeyDown("Pause"))
         {
             if(GameIsPaused)
             {
@@ -42,7 +42,7 @@ public class Menus : MonoBehaviour {
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Tab))
+        if(InputManager.GetKeyDown("Inventory"))
         {
             if (invOpen)
             {

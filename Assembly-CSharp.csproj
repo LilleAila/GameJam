@@ -66,16 +66,20 @@
     <Compile Include="Assets\Scripts\ProceduralGeneration\Terrain4\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\Menus\SetSensitivity.cs" />
     <Compile Include="Assets\Scripts\ProceduralGeneration\Terrain3\GenerateMesh3.cs" />
+    <Compile Include="Assets\Scripts\Input Manager\InputManager.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\Menus\SetVolume.cs" />
     <Compile Include="Assets\Scripts\ProceduralGeneration\RiverGeneration.cs" />
+    <Compile Include="Assets\Scripts\Input Manager\InputObject.cs" />
     <Compile Include="Assets\Items\Crafting\Scripts\CraftingObject.cs" />
     <Compile Include="Assets\Items\Crafting\Scripts\CraftingRecipesScript.cs" />
     <Compile Include="Assets\Items\Inventory\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\ProceduralGeneration\Terrain4\GenerateMesh4.cs" />
     <Compile Include="Assets\Scripts\PlayerController\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerController\CameraBobbing.cs" />
+    <Compile Include="Assets\Scripts\PlayerController\EatFood.cs" />
     <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
+    <Compile Include="Assets\Items\ToolScripts\Furnace\Furnace.cs" />
     <Compile Include="Assets\Scripts\PlayerController\PlaceItem.cs" />
     <Compile Include="Assets\Items\Scripts\ItemDatabaseObject.cs" />
     <Compile Include="Assets\Scripts\ProceduralGeneration\LevelGeneration.cs" />
@@ -90,6 +94,7 @@
     <Compile Include="Assets\Scripts\ProceduralGeneration\TreeGeneration.cs" />
     <Compile Include="Assets\Scripts\ProceduralGeneration\Terrain2\TerrainGenerator.cs" />
     <Compile Include="Assets\Items\Crafting\Scripts\CraftingRecipes.cs" />
+    <Compile Include="Assets\Items\ToolScripts\Furnace\FurnaceRecipeObject.cs" />
     <Compile Include="Assets\Items\Scripts\DefaultObject.cs" />
     <Compile Include="Assets\Scripts\PlayerController\PutObjectOnGround.cs" />
     <Compile Include="Assets\Items\Inventory\Scripts\GroundItem.cs" />
@@ -103,7 +108,6 @@
     <Compile Include="Assets\Scripts\Hotbar.cs" />
     <Compile Include="Assets\Items\Inventory\Scripts\InventoryObject.cs" />
     <Compile Include="Assets\Items\Scripts\FoodObject.cs" />
-    <Compile Include="Assets\Scripts\PlayerController\EatFood.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

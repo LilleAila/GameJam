@@ -22,7 +22,9 @@ public class PlaceObjects4 : MonoBehaviour
                 RaycastHit boxHit;
                 if (Physics.BoxCast(startPoint, TerrainController.PlaceableObjectSizes[prefabType], Vector3.down, out boxHit, orientation) && boxHit.collider.CompareTag("Terrain"))
                 {
-                    Instantiate(TerrainController.PlaceableObjects[prefabType], new Vector3(startPoint.x, hit.point.y, startPoint.z), orientation, transform);
+                    GameObject placedObject = Instantiate(TerrainController.PlaceableObjects[prefabType], new Vector3(startPoint.x, hit.point.y, startPoint.z), orientation, transform);
+                    // Vector3 placeTransform = TerrainController.PlaceableObjects[prefabType].transform.localEulerAngles;
+                    // placedObject.transform.localEulerAngles = new Vector3(placeTransform.x, placeTransform.y, placedObject.transform.localEulerAngles.z);
                 }
             }
 

@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Submit"))
+        if(InputManager.GetKeyDown("Submit"))
         {
             PlayerHealth.hp -= 0.1f;
         }
@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         float walkSpeed = speed;
-        if (Input.GetButton("Sprint"))
+        if (InputManager.GetKey("Sprint"))
         {
             walkSpeed = sprintSpeed;
             sprinting = true;
@@ -73,17 +73,11 @@ public class PlayerMovement : MonoBehaviour
             sprintTime = 0;
         }
 
-        /*if(Input.GetKeyDown(KeyCode.LeftControl) && GetComponent<CameraBobbing>().isWalking)
-        {
-            walkSpeed += sprintSpeedIncrease;
-            playerCamera.GetComponent<Camera>().fieldOfView = SettingsMenu.FOV + sprintFOVIncrease;
-        } else
-        {
-            playerCamera.GetComponent<Camera>().fieldOfView = SettingsMenu.FOV;
-        }*/
+        /* float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical"); */
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        float x = InputManager.GetAxis("Side");
+        float z = InputManager.GetAxis("Forward");
 
 
         Vector3 move = transform.right * x + transform.forward * z;
@@ -95,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("[Insert Fall Damage]");
         }*/
 
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if(InputManager.GetKeyDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }

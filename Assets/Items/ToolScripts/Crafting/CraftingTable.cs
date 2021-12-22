@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CraftingTable : MonoBehaviour
 {
-    public InventoryObject inventory;
+    // public InventoryObject inventory;
     //public Menus menusScript;
 
     private void OnMouseOver()
