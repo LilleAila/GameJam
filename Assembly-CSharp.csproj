@@ -103,6 +103,7 @@
     <Compile Include="Assets\Scripts\Hotbar.cs" />
     <Compile Include="Assets\Items\Inventory\Scripts\InventoryObject.cs" />
     <Compile Include="Assets\Items\Scripts\FoodObject.cs" />
+    <Compile Include="Assets\Scripts\PlayerController\EatFood.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

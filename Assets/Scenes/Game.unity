@@ -1444,6 +1444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 700
   playerBody: {fileID: 658088040}
+  sprintFOV: 15
 --- !u!20 &483131604
 Camera:
   m_ObjectHideFlags: 0
@@ -2124,6 +2125,8 @@ MonoBehaviour:
   controller: {fileID: 658088039}
   playerCamera: {fileID: 963194225}
   speed: 7.5
+  sprintSpeed: 13
+  sprintHp: 0.02
   gravity: -20
   groundVelocity: -2
   jumpHeight: 3
@@ -3248,6 +3251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 350
   playerBody: {fileID: 658088040}
+  sprintFOV: 5
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3313,6 +3317,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2718165870185500497, guid: 8e96670145b5cc442bda76ba4584562c, type: 3}
   m_PrefabInstance: {fileID: 65471261}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &971331648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971331643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a76a74d57238241a31e9fcf70566fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 11400000, guid: 32237d263fc976545b1b1a6740865df9, type: 2}
 --- !u!1 &999402029
 GameObject:
   m_ObjectHideFlags: 0

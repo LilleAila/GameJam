@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject playerCamera;
 
     public float speed = 12f;
+    public float sprintSpeed = 15f;
+    [Range(0, 1)]public float sprintHp = 0.01f;
     public float gravity = -9.81f;
     public float groundVelocity = -3.5f;
     public float jumpHeight = 3f;
@@ -18,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
+
+    public static bool sprinting = false;
+    float sprintTime = 0;
 
     /*public float fallDmgVelocity = -10f;
     public float fallDmg = 5;
@@ -53,6 +58,20 @@ public class PlayerMovement : MonoBehaviour
         }
 
         float walkSpeed = speed;
+        if (Input.GetButton("Sprint"))
+        {
+            walkSpeed = sprintSpeed;
+            sprinting = true;
+            sprintTime += Time.deltaTime;
+            if(sprintTime >= 5)
+            {
+                PlayerHealth.hp -= sprintHp * Time.deltaTime;
+            }
+        } else
+        {
+            sprinting = false;
+            sprintTime = 0;
+        }
 
         /*if(Input.GetKeyDown(KeyCode.LeftControl) && GetComponent<CameraBobbing>().isWalking)
         {

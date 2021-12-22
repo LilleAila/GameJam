@@ -8,6 +8,7 @@ public class TreeScript : MonoBehaviour
     public GameObject treeObject;
     // public GameObject woodItem;
     public ItemObject woodItemObject;
+    public ItemObject squirrelItemObject;
     bool canChop = true;
     public int itemYOffset = 1;
     public InventoryObject inventory;
@@ -39,6 +40,10 @@ public class TreeScript : MonoBehaviour
                 treeObject.GetComponent<Rigidbody>().isKinematic = false;
                 // Instantiate(woodItem, this.transform.position + new Vector3(0, itemYOffset, 0), Quaternion.identity);
                 inventory.AddItem(new Item(woodItemObject), Mathf.FloorToInt(Random.Range(1f, 7f)));
+                if(Mathf.FloorToInt(Random.Range(1f, 10f)) == 5)
+                {
+                    inventory.AddItem(new Item(squirrelItemObject), 1);
+                }
                 canChop = false;
 
                 Invoke("DisableGravity", 5);

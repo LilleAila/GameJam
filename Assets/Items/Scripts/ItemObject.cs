@@ -10,13 +10,13 @@ public enum ItemType
     Default
 }
 
-public enum Attributes
+/* public enum Attributes
 {
     Agility,
     Intellect,
     Stamina,
     Strength
-}
+}*/
 
 public abstract class ItemObject : ScriptableObject
 {
@@ -36,6 +36,9 @@ public abstract class ItemObject : ScriptableObject
     public bool placeable;
     public GameObject placePrefab;
     [Range(1, 10)]public int placeDistance = 5;
+
+    public bool edible;
+    [Range(0, 1)]public float restoreHealthValue;
 
     /*[TextArea(15,20)]
     public string description;*/

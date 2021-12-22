@@ -54,6 +54,10 @@ public class PlayerHealth : MonoBehaviour
             GameOver.SetActive(true);
             dead = true;
         }
+        if(hp > 1)
+        {
+            hp = 1;
+        }
         HealthBar.GetComponent<Slider>().value = hp;
     }
 }

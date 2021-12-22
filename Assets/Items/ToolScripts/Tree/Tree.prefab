@@ -61,6 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeObject: {fileID: 5803089940501056561}
   woodItemObject: {fileID: 11400000, guid: 8046f9ccb4a386f4bbf6c444b7274973, type: 2}
+  squirrelItemObject: {fileID: 11400000, guid: a5cb1028873e4ff4d89a9b99d2869e80, type: 2}
   itemYOffset: 1
   inventory: {fileID: 11400000, guid: 32237d263fc976545b1b1a6740865df9, type: 2}
 --- !u!1001 &6650090828204634464
