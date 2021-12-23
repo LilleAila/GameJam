@@ -9,9 +9,14 @@ ScriptsOnlyBuild:
     - CraftingTable
     - DefaultObject
     - DisplayInventory
+    - EatFood
+    - FoodObject
+    - Furnace
     - GenerateMesh4
     - HandItem
     - Hotbar
+    - InputManager
+    - InputObject
     - Inventory
     - InventoryObject
     - ItemDatabaseObject
@@ -130,113 +135,123 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1480}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 1524}
+      Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1582}
+      Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 1606}
+      Script: {instanceID: 1692}
     - Class: 114
-      Script: {instanceID: 1676}
+      Script: {instanceID: 1722}
     - Class: 114
-      Script: {instanceID: 1706}
-    - Class: 114
-      Script: {instanceID: 1758}
+      Script: {instanceID: 1752}
     - Class: 114
       Script: {instanceID: 1798}
     - Class: 114
-      Script: {instanceID: 1854}
+      Script: {instanceID: 1836}
     - Class: 114
-      Script: {instanceID: 2052}
+      Script: {instanceID: 1900}
     - Class: 114
-      Script: {instanceID: 2164}
+      Script: {instanceID: 1926}
     - Class: 114
-      Script: {instanceID: 2322}
+      Script: {instanceID: 1946}
     - Class: 114
-      Script: {instanceID: 2342}
+      Script: {instanceID: 1958}
     - Class: 114
-      Script: {instanceID: 2348}
+      Script: {instanceID: 2014}
     - Class: 114
-      Script: {instanceID: 2378}
+      Script: {instanceID: 2062}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2192}
     - Class: 114
-      Script: {instanceID: 2472}
+      Script: {instanceID: 2308}
     - Class: 114
-      Script: {instanceID: 2504}
+      Script: {instanceID: 2386}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2456}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2482}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2580}
     - Class: 114
-      Script: {instanceID: 2902}
+      Script: {instanceID: 2604}
     - Class: 114
-      Script: {instanceID: 3202}
+      Script: {instanceID: 2612}
     - Class: 114
-      Script: {instanceID: 3232}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 3332}
+      Script: {instanceID: 2698}
     - Class: 114
-      Script: {instanceID: 3592}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 3872}
+      Script: {instanceID: 2746}
     - Class: 114
-      Script: {instanceID: 3976}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 4052}
+      Script: {instanceID: 2784}
     - Class: 114
-      Script: {instanceID: 4082}
+      Script: {instanceID: 2912}
     - Class: 114
-      Script: {instanceID: 4130}
+      Script: {instanceID: 2932}
     - Class: 114
-      Script: {instanceID: 4434}
+      Script: {instanceID: 2954}
     - Class: 114
-      Script: {instanceID: 4446}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 4478}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 4482}
+      Script: {instanceID: 3270}
     - Class: 114
-      Script: {instanceID: 4546}
+      Script: {instanceID: 3372}
     - Class: 114
-      Script: {instanceID: 57236}
+      Script: {instanceID: 3600}
     - Class: 114
-      Script: {instanceID: 57242}
+      Script: {instanceID: 3632}
     - Class: 114
-      Script: {instanceID: 57254}
+      Script: {instanceID: 3716}
     - Class: 114
-      Script: {instanceID: 86152}
+      Script: {instanceID: 3748}
     - Class: 114
-      Script: {instanceID: 86156}
+      Script: {instanceID: 4046}
     - Class: 114
-      Script: {instanceID: 86210}
+      Script: {instanceID: 4216}
     - Class: 114
-      Script: {instanceID: 86212}
+      Script: {instanceID: 4366}
     - Class: 114
-      Script: {instanceID: 86240}
+      Script: {instanceID: 4486}
     - Class: 114
-      Script: {instanceID: 86244}
+      Script: {instanceID: 4568}
     - Class: 114
-      Script: {instanceID: 86264}
+      Script: {instanceID: 4570}
     - Class: 114
-      Script: {instanceID: 86272}
+      Script: {instanceID: 4602}
     - Class: 114
-      Script: {instanceID: 86274}
+      Script: {instanceID: 4606}
     - Class: 114
-      Script: {instanceID: 86284}
+      Script: {instanceID: 4646}
     - Class: 114
-      Script: {instanceID: 86292}
+      Script: {instanceID: 4664}
     - Class: 114
-      Script: {instanceID: 86298}
+      Script: {instanceID: 4806}
     - Class: 114
-      Script: {instanceID: 86302}
+      Script: {instanceID: 4946}
     - Class: 114
-      Script: {instanceID: 86310}
+      Script: {instanceID: 5014}
     - Class: 114
-      Script: {instanceID: 86314}
+      Script: {instanceID: 5028}
+    - Class: 114
+      Script: {instanceID: 5062}
+    - Class: 114
+      Script: {instanceID: 5066}
+    - Class: 114
+      Script: {instanceID: 5114}
+    - Class: 114
+      Script: {instanceID: 5138}
+    - Class: 114
+      Script: {instanceID: 5146}
+    - Class: 114
+      Script: {instanceID: 5152}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -297,63 +312,67 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1480}
+      Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 1606}
+      Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1620}
+      Script: {instanceID: 1572}
     - Class: 114
-      Script: {instanceID: 1634}
+      Script: {instanceID: 1722}
     - Class: 114
-      Script: {instanceID: 1676}
-    - Class: 114
-      Script: {instanceID: 1758}
+      Script: {instanceID: 1750}
     - Class: 114
       Script: {instanceID: 1798}
     - Class: 114
-      Script: {instanceID: 1854}
+      Script: {instanceID: 1900}
     - Class: 114
-      Script: {instanceID: 2042}
+      Script: {instanceID: 1946}
     - Class: 114
-      Script: {instanceID: 2052}
+      Script: {instanceID: 2014}
     - Class: 114
-      Script: {instanceID: 2348}
+      Script: {instanceID: 2244}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2612}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2760}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2784}
     - Class: 114
-      Script: {instanceID: 2836}
+      Script: {instanceID: 2932}
     - Class: 114
-      Script: {instanceID: 2902}
+      Script: {instanceID: 2984}
     - Class: 114
-      Script: {instanceID: 3232}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 3332}
+      Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 3592}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 3750}
+      Script: {instanceID: 3270}
     - Class: 114
-      Script: {instanceID: 3868}
+      Script: {instanceID: 3464}
     - Class: 114
-      Script: {instanceID: 3976}
+      Script: {instanceID: 3632}
     - Class: 114
-      Script: {instanceID: 4144}
+      Script: {instanceID: 3748}
     - Class: 114
-      Script: {instanceID: 4546}
+      Script: {instanceID: 4046}
     - Class: 114
-      Script: {instanceID: 19904}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 19948}
+      Script: {instanceID: 4362}
     - Class: 114
-      Script: {instanceID: 20014}
+      Script: {instanceID: 4486}
     - Class: 114
-      Script: {instanceID: 20020}
+      Script: {instanceID: 4678}
+    - Class: 114
+      Script: {instanceID: 4920}
+    - Class: 114
+      Script: {instanceID: 5138}
+    - Class: 114
+      Script: {instanceID: 5146}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -392,27 +411,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1480}
+      Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1676}
+      Script: {instanceID: 1798}
     - Class: 114
-      Script: {instanceID: 1758}
+      Script: {instanceID: 1900}
     - Class: 114
-      Script: {instanceID: 2348}
+      Script: {instanceID: 2612}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2784}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2932}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 2902}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 3370}
+      Script: {instanceID: 3788}
     - Class: 114
-      Script: {instanceID: 3750}
+      Script: {instanceID: 4238}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -428,12 +447,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 241
-      Script: {instanceID: 0}
-    - Class: 243
-      Script: {instanceID: 0}
-    - Class: 245
       Script: {instanceID: 0}
     Assets/Scenes/Settings/FOV.unity:
     - Class: 1
@@ -465,27 +478,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1480}
+      Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1758}
+      Script: {instanceID: 1900}
     - Class: 114
-      Script: {instanceID: 2348}
+      Script: {instanceID: 2612}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2784}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2932}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 2902}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 3406}
+      Script: {instanceID: 3832}
     - Class: 114
-      Script: {instanceID: 3750}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 4438}
+      Script: {instanceID: 5020}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -532,27 +545,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1480}
+      Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1758}
+      Script: {instanceID: 1900}
     - Class: 114
-      Script: {instanceID: 2012}
+      Script: {instanceID: 2208}
     - Class: 114
-      Script: {instanceID: 2348}
+      Script: {instanceID: 2612}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2784}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2932}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 2902}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 3750}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 4438}
+      Script: {instanceID: 5020}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -599,27 +612,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1480}
+      Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1758}
+      Script: {instanceID: 1900}
     - Class: 114
-      Script: {instanceID: 2194}
+      Script: {instanceID: 2432}
     - Class: 114
-      Script: {instanceID: 2348}
+      Script: {instanceID: 2612}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2508}
+      Script: {instanceID: 2784}
     - Class: 114
-      Script: {instanceID: 2632}
+      Script: {instanceID: 2932}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 2902}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 3750}
+      Script: {instanceID: 4238}
     - Class: 114
-      Script: {instanceID: 4438}
+      Script: {instanceID: 5020}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -645,10 +658,22 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: bcaee4c2a83047257b5f47d6ed264b75
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -663,10 +688,34 @@ ScriptsOnlyBuild:
     className: DisplayInventory
   - hash:
       serializedVersion: 2
+      Hash: fb59ea7344c53050c0ce13259c964d85
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: LowPolyTerrainExample
+  - hash:
+      serializedVersion: 2
+      Hash: bf4698a3b70ae92d7166ab31c3de7991
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: Dodecahedron
+  - hash:
+      serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 90efedc915966bdbd6c93ef00aa5c306
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: PathOffsetterExample
+  - hash:
+      serializedVersion: 2
+      Hash: d2a1a3e35068a584052f33fbad1e3c9d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TerrainController3
   - hash:
       serializedVersion: 2
       Hash: 785fb75e07444f968f1a40286e7efc4b
@@ -675,7 +724,13 @@ ScriptsOnlyBuild:
     className: Menus
   - hash:
       serializedVersion: 2
-      Hash: 48730aa44add95d4121c29bee96b9992
+      Hash: 621657c810d1a3f65ca2a545698deaf3
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: FlatSphere
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CraftingTable
@@ -687,16 +742,22 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
-      Hash: bcaee4c2a83047257b5f47d6ed264b75
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Toggle
+      Hash: b8c45cb1075f9ebb50848131bfa57c04
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: CharacterGeneratorConfigurator
   - hash:
       serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: LayoutElement
+  - hash:
+      serializedVersion: 2
+      Hash: d0987ce3e9092dbe0fa30d73f333fffa
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Grain
   - hash:
       serializedVersion: 2
       Hash: 6bc76e17f0d5e93f3eea7f5a2fe227f3
@@ -711,10 +772,10 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NoiseMapGeneration
+      Hash: 445199bc780abb60cd8a5e5edd8edd83
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Buildings
+    className: BuildingGeneratorComponent
   - hash:
       serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
@@ -723,10 +784,28 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NoiseMapGeneration
+  - hash:
+      serializedVersion: 2
+      Hash: aa2f054c0ada095479efea31e9280103
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: MazeGeneratorConfigurator
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 4f20242cde799a1685083ee75c2e27e5
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: TessellatorExample
   - hash:
       serializedVersion: 2
       Hash: 300fd99066f8c288e85f5e81ce65fe34
@@ -735,10 +814,40 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 01b48bbbc755c5005190dd523d6f9fa3
+      Hash: bf4698a3b70ae92d7166ab31c3de7991
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: Icosahedron
+  - hash:
+      serializedVersion: 2
+      Hash: e82c0521cdfe8cb6a168ef7208a98d4a
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Vignette
+  - hash:
+      serializedVersion: 2
+      Hash: 054a9aa738da1e92eeccb31922186faf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ToolObject
+  - hash:
+      serializedVersion: 2
+      Hash: f542c1afca5bb4022f91fdda19b8d622
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: DepthOfField
+  - hash:
+      serializedVersion: 2
+      Hash: a243e8cfcf11471f02d451ad0a2b7a34
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: NoiseExample
+  - hash:
+      serializedVersion: 2
+      Hash: 57ea7f091b24f31faee484fdaf814f12
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: Prism
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -753,10 +862,46 @@ ScriptsOnlyBuild:
     className: MeshGenerator
   - hash:
       serializedVersion: 2
+      Hash: 7cd38c1ec0dd054f391d92121f42317c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TerrainController4
+  - hash:
+      serializedVersion: 2
+      Hash: 55b6581de435b7d3e0e809c447d6b409
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Buildings
+    className: ProceduralRoofConstructor
+  - hash:
+      serializedVersion: 2
+      Hash: 817a1264b8c068c2c62600036a6fc728
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: Teardrop
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlaceObjects4
+  - hash:
+      serializedVersion: 2
+      Hash: bf4698a3b70ae92d7166ab31c3de7991
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: Tetrahedron
+  - hash:
+      serializedVersion: 2
+      Hash: 65b3a3b9a7779d539ec75a3ceddebdba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FollowPlayer
   - hash:
       serializedVersion: 2
       Hash: 53e2b210167f218a8cfb30d3aa434cee
@@ -771,10 +916,22 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GenerateMesh3
+  - hash:
+      serializedVersion: 2
+      Hash: 43e42b910d671f0fd304256b01601b25
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Buildings
+    className: ProceduralFacadeConstructor
+  - hash:
+      serializedVersion: 2
+      Hash: c3500d79914d29d863d1a36ebb95fdec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InputManager
   - hash:
       serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
@@ -789,10 +946,22 @@ ScriptsOnlyBuild:
     className: LookAtCamera
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: ConfiguratorBase
+  - hash:
+      serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 9b9e84f4a61485ed0e07a4bfcad1a63b
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: ChairGeneratorConfigurator
   - hash:
       serializedVersion: 2
       Hash: 412d8f6b685eb034a81df84e554759f9
@@ -807,6 +976,30 @@ ScriptsOnlyBuild:
     className: RiverGeneration
   - hash:
       serializedVersion: 2
+      Hash: 8fcbe5f6db83c986996bd7e19f6beb39
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InputObject
+  - hash:
+      serializedVersion: 2
+      Hash: b1d23a429ceba9b995c51d2917e55e11
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Buildings
+    className: BuildingGeneratorReuse
+  - hash:
+      serializedVersion: 2
+      Hash: 57ea7f091b24f31faee484fdaf814f12
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: Pyramid
+  - hash:
+      serializedVersion: 2
+      Hash: a1f19ad47d3094e235f21b74dfc423a8
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessLayer
+  - hash:
+      serializedVersion: 2
       Hash: eb0b51ca4423c84028db2eef9c150182
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -819,6 +1012,12 @@ ScriptsOnlyBuild:
     className: CraftingRecipesScript
   - hash:
       serializedVersion: 2
+      Hash: 137b6d8286075572e503fd28bb8e5af4
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: CharacterGenerator
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -829,6 +1028,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Inventory
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GenerateMesh4
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -867,6 +1072,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 7ee0d5407bea80af8dc1b093b1c8a880
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.UI
+    className: TextControl
+  - hash:
+      serializedVersion: 2
       Hash: 4ad56fd9801aa94bb9e11abbfbd9f87c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -877,6 +1088,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 817a1264b8c068c2c62600036a6fc728
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: FlatTeardrop
+  - hash:
+      serializedVersion: 2
+      Hash: b25cbfed034540d7064d9c44230d5b12
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: Plane
+  - hash:
+      serializedVersion: 2
+      Hash: 61b9d9b6f4b6a222dfea8b131b3d3227
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ChromaticAberration
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -891,6 +1120,18 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 48730aa44add95d4121c29bee96b9992
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EatFood
+  - hash:
+      serializedVersion: 2
+      Hash: b55e69ebc278072e819acca29ddb906f
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: PathClipperExample
+  - hash:
+      serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -903,6 +1144,12 @@ ScriptsOnlyBuild:
     className: InputField
   - hash:
       serializedVersion: 2
+      Hash: 1b5a670fba64a9f714eec374bfa27d9a
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.UI
+    className: ButtonControl
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -910,9 +1157,21 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Buildings
+    className: ProceduralFacadePlanner
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: d53b06a7d14cb19e1b0784d1ea052cc0
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: CellularAutomatonConfigurator
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -957,10 +1216,28 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: c9439439299454f68bd5f561c95cd32a
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: Capsule
+  - hash:
+      serializedVersion: 2
       Hash: 69415240821be7986b27e72bf9609a30
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 3c1d94f7962ae979581d6da8b7c3c458
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: Brick
+  - hash:
+      serializedVersion: 2
+      Hash: ed73c2e4bef644baa01de34bd7936b41
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Furnace
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -969,10 +1246,28 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Skeleton
+    className: StraightSkeletonExample
+  - hash:
+      serializedVersion: 2
+      Hash: a53651ee3996fbba20dfe0fce02f0b23
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: AutoExposure
+  - hash:
+      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 558d8e82c996cfb27919ae2c7c1b2769
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.UI
+    className: SliderControl
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -993,13 +1288,25 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 282e6d2d5fec787025d99d48c43cdd02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowInputs
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
-      Hash: cda14d82354800e313b85da137d7a477
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: Drawer
+  - hash:
+      serializedVersion: 2
+      Hash: 0bd1a250da1f981d20e0f7acecbd027f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlaceItem
@@ -1017,6 +1324,12 @@ ScriptsOnlyBuild:
     className: ItemDatabaseObject
   - hash:
       serializedVersion: 2
+      Hash: bf4698a3b70ae92d7166ab31c3de7991
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: Octahedron
+  - hash:
+      serializedVersion: 2
       Hash: 2e3af93090431a58ea0b029738a81770
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1027,6 +1340,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 1c74533d45d60e7a7cf4aa92a8c96580
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: Character
   - hash:
       serializedVersion: 2
       Hash: da4cc51a02ce84afe2cecd27cfe6997a
@@ -1041,10 +1360,22 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
+      Hash: 71f7f12b8d0f4fd73590db8bcb6d453c
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: Bloom
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 04d27d66af650e2ca7a883c9b8a4bb2f
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: ImageSelector
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1065,7 +1396,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 755b0c2539de4a00ce8c521d88810ee5
+      Hash: e3e2400e646aeb0d63c05f4426806705
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SettingsMenu
@@ -1075,6 +1406,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TileGeneration
+  - hash:
+      serializedVersion: 2
+      Hash: 030d881b1b1517c9498a019efdd0de9d
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Buildings
+    className: BuildingGeneratorConfigurator
   - hash:
       serializedVersion: 2
       Hash: 53e2b210167f218a8cfb30d3aa434cee
@@ -1095,6 +1432,12 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OpenMainMenu
+  - hash:
+      serializedVersion: 2
       Hash: a81d4c2c1cf3ad164d277d927a193679
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1107,13 +1450,19 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
+      Hash: 57ea7f091b24f31faee484fdaf814f12
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: Cylinder
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 17ab6ae2b2b49b0f0e0cb81c54685830
+      Hash: 7414793c7f5648fa07b9dd05d8353a66
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WeaponObject
@@ -1125,10 +1474,46 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: 817a1264b8c068c2c62600036a6fc728
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: FlatSpheroid
+  - hash:
+      serializedVersion: 2
+      Hash: 7e6ed836cbaa230e56d6a2bbae1b9bb5
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessEffectSettings
+  - hash:
+      serializedVersion: 2
+      Hash: be33c1073c7992585ed29e32cec7df69
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerZero4
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Buildings
+    className: ProceduralRoofPlanner
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 38bcb4d3f9a1812fd650f92e87a4cf64
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessProfile
+  - hash:
+      serializedVersion: 2
+      Hash: 50c443b12ccc0b475183318b5088bcc5
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessDebug
   - hash:
       serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
@@ -1197,7 +1582,25 @@ ScriptsOnlyBuild:
     className: CraftingRecipes
   - hash:
       serializedVersion: 2
-      Hash: 01b48bbbc755c5005190dd523d6f9fa3
+      Hash: 621657c810d1a3f65ca2a545698deaf3
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: Sphere
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: SkyBoxGenerator
+  - hash:
+      serializedVersion: 2
+      Hash: 86f2ccf6d330419226e17118efe11dfb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FurnaceRecipeObject
+  - hash:
+      serializedVersion: 2
+      Hash: 054a9aa738da1e92eeccb31922186faf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DefaultObject
@@ -1221,16 +1624,52 @@ ScriptsOnlyBuild:
     className: GroundItem
   - hash:
       serializedVersion: 2
+      Hash: 726fcf7961cbb4108aa5be5e55b8c8bf
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ColorGrading
+  - hash:
+      serializedVersion: 2
       Hash: 6528d47efc7fed08c03b72cfc6eae721
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RockScript
   - hash:
       serializedVersion: 2
-      Hash: 39d4e8e63dbd4bb2772fcca5e91310a7
+      Hash: af93f9c42e90877a9ba31e37adfd900c
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: MotionBlur
+  - hash:
+      serializedVersion: 2
+      Hash: 226c929be843422965b09e8c711deee1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
+  - hash:
+      serializedVersion: 2
+      Hash: 817a1264b8c068c2c62600036a6fc728
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Primitives
+    className: Spheroid
+  - hash:
+      serializedVersion: 2
+      Hash: 21b798dc453477fc45ea87a3220855bb
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: CameraRotator
+  - hash:
+      serializedVersion: 2
+      Hash: 89d00be0f1f3e9f99df415a58c3e08f6
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.Buildings
+    className: PolygonAsset
+  - hash:
+      serializedVersion: 2
+      Hash: b13de7a0a457cb8e026d4237dc1b5797
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: LensDistortion
   - hash:
       serializedVersion: 2
       Hash: c50cb7d2430ba3954e4a258253ab9c1a
@@ -1251,13 +1690,43 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NewBehaviourScript
+  - hash:
+      serializedVersion: 2
+      Hash: 63d7b9b64a11859f416d72ba9a3c3fec
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: ScreenSpaceReflections
+  - hash:
+      serializedVersion: 2
+      Hash: ac16c9f67fb1d0eb1780384a2e7ad9ae
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples.UI
+    className: ToggleControl
+  - hash:
+      serializedVersion: 2
+      Hash: 2329077cf976ac7d6a23d1c1e4758046
+    assemblyName: ProceduralToolkit.Samples.dll
+    namespaceName: ProceduralToolkit.Samples
+    className: BreakoutConfigurator
+  - hash:
+      serializedVersion: 2
+      Hash: d5630f96bd5a6a6eed7e1754c3fb8703
+    assemblyName: Unity.Postprocessing.Runtime.dll
+    namespaceName: UnityEngine.Rendering.PostProcessing
+    className: PostProcessVolume
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 655675a941ea756088027703b43352a4
+      Hash: 0592219b58347946b43ae53fc22eb356
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MouseLook
@@ -1269,7 +1738,7 @@ ScriptsOnlyBuild:
     className: OpenOptionsMenu
   - hash:
       serializedVersion: 2
-      Hash: b395f850b89c1074ad4707de529326db
+      Hash: 4cd8d0e09d6d76243ddad2a219a40c77
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TreeScript
@@ -1299,400 +1768,10 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 858042d25460d7c7e308b4d40b347dcf
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: InventoryObject
-  - hash:
-      serializedVersion: 2
-      Hash: 6e42eb905fdf53fc99cdee507244d140
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FoodObject
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GenerateMesh3
-  - hash:
-      serializedVersion: 2
-      Hash: d2a1a3e35068a584052f33fbad1e3c9d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TerrainController3
-  - hash:
-      serializedVersion: 2
-      Hash: b55e69ebc278072e819acca29ddb906f
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: PathClipperExample
-  - hash:
-      serializedVersion: 2
-      Hash: 55b6581de435b7d3e0e809c447d6b409
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Buildings
-    className: ProceduralRoofConstructor
-  - hash:
-      serializedVersion: 2
-      Hash: 1b5a670fba64a9f714eec374bfa27d9a
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.UI
-    className: ButtonControl
-  - hash:
-      serializedVersion: 2
-      Hash: 030d881b1b1517c9498a019efdd0de9d
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Buildings
-    className: BuildingGeneratorConfigurator
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Buildings
-    className: ProceduralFacadePlanner
-  - hash:
-      serializedVersion: 2
-      Hash: fb59ea7344c53050c0ce13259c964d85
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: LowPolyTerrainExample
-  - hash:
-      serializedVersion: 2
-      Hash: bf4698a3b70ae92d7166ab31c3de7991
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: Dodecahedron
-  - hash:
-      serializedVersion: 2
-      Hash: 137b6d8286075572e503fd28bb8e5af4
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: CharacterGenerator
-  - hash:
-      serializedVersion: 2
-      Hash: 817a1264b8c068c2c62600036a6fc728
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: Teardrop
-  - hash:
-      serializedVersion: 2
-      Hash: 90efedc915966bdbd6c93ef00aa5c306
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: PathOffsetterExample
-  - hash:
-      serializedVersion: 2
-      Hash: 558d8e82c996cfb27919ae2c7c1b2769
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.UI
-    className: SliderControl
-  - hash:
-      serializedVersion: 2
-      Hash: 621657c810d1a3f65ca2a545698deaf3
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: Sphere
-  - hash:
-      serializedVersion: 2
-      Hash: 621657c810d1a3f65ca2a545698deaf3
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: FlatSphere
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: SkyBoxGenerator
-  - hash:
-      serializedVersion: 2
-      Hash: bf4698a3b70ae92d7166ab31c3de7991
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: Tetrahedron
-  - hash:
-      serializedVersion: 2
-      Hash: b8c45cb1075f9ebb50848131bfa57c04
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: CharacterGeneratorConfigurator
-  - hash:
-      serializedVersion: 2
-      Hash: d53b06a7d14cb19e1b0784d1ea052cc0
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: CellularAutomatonConfigurator
-  - hash:
-      serializedVersion: 2
-      Hash: 57ea7f091b24f31faee484fdaf814f12
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: Cylinder
-  - hash:
-      serializedVersion: 2
-      Hash: 43e42b910d671f0fd304256b01601b25
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Buildings
-    className: ProceduralFacadeConstructor
-  - hash:
-      serializedVersion: 2
-      Hash: ac16c9f67fb1d0eb1780384a2e7ad9ae
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.UI
-    className: ToggleControl
-  - hash:
-      serializedVersion: 2
-      Hash: 2329077cf976ac7d6a23d1c1e4758046
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: BreakoutConfigurator
-  - hash:
-      serializedVersion: 2
-      Hash: 7ee0d5407bea80af8dc1b093b1c8a880
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.UI
-    className: TextControl
-  - hash:
-      serializedVersion: 2
-      Hash: 445199bc780abb60cd8a5e5edd8edd83
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Buildings
-    className: BuildingGeneratorComponent
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: Drawer
-  - hash:
-      serializedVersion: 2
-      Hash: aa2f054c0ada095479efea31e9280103
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: MazeGeneratorConfigurator
-  - hash:
-      serializedVersion: 2
-      Hash: 817a1264b8c068c2c62600036a6fc728
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: FlatTeardrop
-  - hash:
-      serializedVersion: 2
-      Hash: 4f20242cde799a1685083ee75c2e27e5
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: TessellatorExample
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: ConfiguratorBase
-  - hash:
-      serializedVersion: 2
-      Hash: b25cbfed034540d7064d9c44230d5b12
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: Plane
-  - hash:
-      serializedVersion: 2
-      Hash: c9439439299454f68bd5f561c95cd32a
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: Capsule
-  - hash:
-      serializedVersion: 2
-      Hash: 817a1264b8c068c2c62600036a6fc728
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: FlatSpheroid
-  - hash:
-      serializedVersion: 2
-      Hash: bf4698a3b70ae92d7166ab31c3de7991
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: Octahedron
-  - hash:
-      serializedVersion: 2
-      Hash: 3c1d94f7962ae979581d6da8b7c3c458
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: Brick
-  - hash:
-      serializedVersion: 2
-      Hash: bf4698a3b70ae92d7166ab31c3de7991
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: Icosahedron
-  - hash:
-      serializedVersion: 2
-      Hash: 9b9e84f4a61485ed0e07a4bfcad1a63b
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: ChairGeneratorConfigurator
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Buildings
-    className: ProceduralRoofPlanner
-  - hash:
-      serializedVersion: 2
-      Hash: 817a1264b8c068c2c62600036a6fc728
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: Spheroid
-  - hash:
-      serializedVersion: 2
-      Hash: 1c74533d45d60e7a7cf4aa92a8c96580
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: Character
-  - hash:
-      serializedVersion: 2
-      Hash: 21b798dc453477fc45ea87a3220855bb
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: CameraRotator
-  - hash:
-      serializedVersion: 2
-      Hash: 89d00be0f1f3e9f99df415a58c3e08f6
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Buildings
-    className: PolygonAsset
-  - hash:
-      serializedVersion: 2
-      Hash: a243e8cfcf11471f02d451ad0a2b7a34
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: NoiseExample
-  - hash:
-      serializedVersion: 2
-      Hash: b1d23a429ceba9b995c51d2917e55e11
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Buildings
-    className: BuildingGeneratorReuse
-  - hash:
-      serializedVersion: 2
-      Hash: 04d27d66af650e2ca7a883c9b8a4bb2f
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples
-    className: ImageSelector
-  - hash:
-      serializedVersion: 2
       Hash: 6f73bea91bc966a2fe06ac69a1ae4592
     assemblyName: ProceduralToolkit.Samples.dll
     namespaceName: ProceduralToolkit.Samples.Primitives
     className: Hexahedron
-  - hash:
-      serializedVersion: 2
-      Hash: 57ea7f091b24f31faee484fdaf814f12
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: Pyramid
-  - hash:
-      serializedVersion: 2
-      Hash: 57ea7f091b24f31faee484fdaf814f12
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Samples.Primitives
-    className: Prism
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: ProceduralToolkit.Samples.dll
-    namespaceName: ProceduralToolkit.Skeleton
-    className: StraightSkeletonExample
-  - hash:
-      serializedVersion: 2
-      Hash: 2fee8626df05683fca8786143ea070d3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TerrainController4
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GenerateMesh4
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlaceObjects4
-  - hash:
-      serializedVersion: 2
-      Hash: be33c1073c7992585ed29e32cec7df69
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerZero4
-  - hash:
-      serializedVersion: 2
-      Hash: 50c443b12ccc0b475183318b5088bcc5
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: PostProcessDebug
-  - hash:
-      serializedVersion: 2
-      Hash: a53651ee3996fbba20dfe0fce02f0b23
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: AutoExposure
-  - hash:
-      serializedVersion: 2
-      Hash: d5630f96bd5a6a6eed7e1754c3fb8703
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: PostProcessVolume
-  - hash:
-      serializedVersion: 2
-      Hash: 63d7b9b64a11859f416d72ba9a3c3fec
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: ScreenSpaceReflections
-  - hash:
-      serializedVersion: 2
-      Hash: 726fcf7961cbb4108aa5be5e55b8c8bf
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: ColorGrading
-  - hash:
-      serializedVersion: 2
-      Hash: 7e6ed836cbaa230e56d6a2bbae1b9bb5
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: PostProcessEffectSettings
-  - hash:
-      serializedVersion: 2
-      Hash: af93f9c42e90877a9ba31e37adfd900c
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: MotionBlur
-  - hash:
-      serializedVersion: 2
-      Hash: e82c0521cdfe8cb6a168ef7208a98d4a
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: Vignette
-  - hash:
-      serializedVersion: 2
-      Hash: b13de7a0a457cb8e026d4237dc1b5797
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: LensDistortion
-  - hash:
-      serializedVersion: 2
-      Hash: 71f7f12b8d0f4fd73590db8bcb6d453c
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: Bloom
-  - hash:
-      serializedVersion: 2
-      Hash: f542c1afca5bb4022f91fdda19b8d622
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: DepthOfField
   - hash:
       serializedVersion: 2
       Hash: d6fc8d3165070298511ec776ea575626
@@ -1701,40 +1780,22 @@ ScriptsOnlyBuild:
     className: PostProcessResources
   - hash:
       serializedVersion: 2
-      Hash: d0987ce3e9092dbe0fa30d73f333fffa
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: Grain
+      Hash: 858042d25460d7c7e308b4d40b347dcf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InventoryObject
   - hash:
       serializedVersion: 2
-      Hash: a1f19ad47d3094e235f21b74dfc423a8
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: PostProcessLayer
-  - hash:
-      serializedVersion: 2
-      Hash: 61b9d9b6f4b6a222dfea8b131b3d3227
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: ChromaticAberration
-  - hash:
-      serializedVersion: 2
-      Hash: 38bcb4d3f9a1812fd650f92e87a4cf64
-    assemblyName: Unity.Postprocessing.Runtime.dll
-    namespaceName: UnityEngine.Rendering.PostProcessing
-    className: PostProcessProfile
+      Hash: 054a9aa738da1e92eeccb31922186faf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FoodObject
   - hash:
       serializedVersion: 2
       Hash: ac6acd886c54c48c599ab5fed5781ea7
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: AmbientOcclusion
-  - hash:
-      serializedVersion: 2
-      Hash: 65b3a3b9a7779d539ec75a3ceddebdba
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FollowPlayer
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity

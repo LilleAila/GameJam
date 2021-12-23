@@ -7,14 +7,15 @@ using UnityEngine.SceneManagement;
 
 public class SettingsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
-    public GameObject volumeSlider;
-    public GameObject FOVSlider;
+    // public AudioMixer audioMixer;
+    // public GameObject volumeSlider;
+    // public GameObject FOVSlider;
 
     public string MainMenuScene = "Menu";
     public string VolumeScene = "Volume";
     public string FOVScene = "FOV";
     public string SensitivityScene = "Sensitivity";
+    public string ControlsScene = "Controls";
 
     public static float FOV = 60;
     public static float masterVolume = 0;
@@ -58,5 +59,10 @@ public class SettingsMenu : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(MainMenuScene);
+    }
+
+    public void ControlsMenu()
+    {
+        SceneManager.LoadScene(ControlsScene);
     }
 }

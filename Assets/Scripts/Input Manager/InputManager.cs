@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -119,5 +120,20 @@ public class InputManager : MonoBehaviour
     {
         // return Input.mousePosition;
         return new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+    }
+
+    public static KeyCode Down()
+    {
+        KeyCode down = KeyCode.None;
+        foreach(KeyCode kCode in Enum.GetValues(typeof(KeyCode)))
+        {
+            if (Input.GetKey(kCode))
+            {
+                down = kCode;
+                break;
+            }
+        }
+
+        return down;
     }
 }
