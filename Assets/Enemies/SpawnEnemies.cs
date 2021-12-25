@@ -19,7 +19,7 @@ public class SpawnEnemies : MonoBehaviour
 
         for (int i = 0; i < enemies.Length; i++)
         {
-            for (int b = 0; b < Mathf.FloorToInt(Random.Range(1, 5)); b++)
+            for (int b = 0; b < Mathf.FloorToInt(Random.Range(1, 2)); b++)
             {
                 if (Random.Range(0, enemies[i].spawnChance) == 1)
                 {

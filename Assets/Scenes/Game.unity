@@ -397,7 +397,7 @@ MonoBehaviour:
   DirectionalLight: {fileID: 705507994}
   Preset: {fileID: 11400000, guid: 75817f11ce488784980ea0cf4a83fff2, type: 2}
   TimeOfDay: 12
-  TimeSpeed: 0.2
+  TimeSpeed: 0.05
   DayStart: 6
   NightStart: 18
 --- !u!114 &38580845
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - spawnChance: 3
+  - spawnChance: 4
     spawnRadius: 25
     enemyPrefab: {fileID: 3153250090759912513, guid: b4adf6b85888f31449ceb1913da117da, type: 3}
   playerTransform: {fileID: 658088040}
