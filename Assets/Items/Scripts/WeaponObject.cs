@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class WeaponObject : ItemObject
 {
-    public int Atk = 0;
+    // public int Atk = 0;
     private void Awake()
     {
         type = ItemType.Weapon;

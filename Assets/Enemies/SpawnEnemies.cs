@@ -19,7 +19,7 @@ public class SpawnEnemies : MonoBehaviour
 
         for (int i = 0; i < enemies.Length; i++)
         {
-            for (int b = 0; b < Mathf.FloorToInt(Random.Range(1, 2)); b++)
+            for (int b = 0; b < Mathf.FloorToInt(Random.Range(1, enemies[i].maxPerFrame)); b++)
             {
                 if (Random.Range(0, enemies[i].spawnChance) == 1)
                 {
@@ -40,5 +40,6 @@ public class SpawnEnemies : MonoBehaviour
 public class Enemy {
     [Range(1, 10)] public int spawnChance = 1;
     public float spawnRadius = 25;
+    [Range(2, 50)] public int maxPerFrame = 5;
     public GameObject enemyPrefab;
 }

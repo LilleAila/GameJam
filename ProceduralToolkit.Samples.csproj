@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B1B83558-06FC-974A-2CA9-753EF00CAEAF}</ProjectGuid>
+    <ProjectGuid>{EF665BC1-501B-A2FA-F51E-51D689369FAE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>ProceduralToolkit.Samples</AssemblyName>
@@ -350,19 +350,19 @@
  <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>C:/Users/olais/Documents/GitHub/GameJam/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/olais/Documents/UnityGames/GameJam2/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>C:/Users/olais/Documents/GitHub/GameJam/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ <HintPath>C:/Users/olais/Documents/UnityGames/GameJam2/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
- <HintPath>C:/Users/olais/Documents/GitHub/GameJam/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+ <HintPath>C:/Users/olais/Documents/UnityGames/GameJam2/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="log4netPlastic">
- <HintPath>C:/Users/olais/Documents/GitHub/GameJam/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ <HintPath>C:/Users/olais/Documents/UnityGames/GameJam2/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/olais/Documents/GitHub/GameJam/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/olais/Documents/UnityGames/GameJam2/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -709,31 +709,31 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/olais/Documents/GitHub/GameJam/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/olais/Documents/GitHub/GameJam/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/olais/Documents/UnityGames/GameJam2/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Users/olais/Documents/UnityGames/GameJam2/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ProceduralToolkit.csproj">
-      <Project>{9E77CAA0-1FA1-5F4C-CD39-2AE7861E7995}</Project>
+      <Project>{88133C2E-BB0F-FEEC-AD34-6FD68E18DE8F}</Project>
       <Name>ProceduralToolkit</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="ProceduralToolkit.ClipperLib.csproj">
-      <Project>{5E513C18-5E18-36CD-B705-09F46AD11151}</Project>
+      <Project>{8C58EC54-8C7A-C9D4-C3B1-7A9E6874FEFF}</Project>
       <Name>ProceduralToolkit.ClipperLib</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="ProceduralToolkit.LibTessDotNet.csproj">
-      <Project>{25A43168-4755-6735-1411-30532F52A2B6}</Project>
+      <Project>{012D1223-2208-C70C-5D80-EEB062DFFDCF}</Project>
       <Name>ProceduralToolkit.LibTessDotNet</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="ProceduralToolkit.FastNoiseLib.csproj">
-      <Project>{1932CFC5-DD0D-5714-ACEE-EE2AB868AA75}</Project>
+      <Project>{C9C8AD7F-3947-525A-1327-9C13BFCC97E4}</Project>
       <Name>ProceduralToolkit.FastNoiseLib</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>

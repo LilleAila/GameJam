@@ -31,5 +31,8 @@ public class HandItem : MonoBehaviour
             heldItem.transform.SetParent(item3DContainer.transform, false);
         }
         itemId = item.Id;
+        ChopTree.chopping = false;
+        MineRock.mining = false;
+        HitEnemy.attacking = false;
     }
 }

@@ -24,6 +24,10 @@ public class PlayerMovement : MonoBehaviour
     public static bool sprinting = false;
     float sprintTime = 0;
 
+    public GameObject model;
+    public float walkAnimSpeed = 1.3f;
+    public float sprintAnimSpeed = 2.3f;
+
     /*public float fallDmgVelocity = -10f;
     public float fallDmg = 5;
     public float fallDmgMultiplier = 0.3f;*/
@@ -78,6 +82,15 @@ public class PlayerMovement : MonoBehaviour
 
         float x = InputManager.GetAxis("Side");
         float z = InputManager.GetAxis("Forward");
+
+        if(x != 0 || z != 0)
+        {
+            if (sprinting) model.GetComponent<Animator>().speed = sprintAnimSpeed;
+            else model.GetComponent<Animator>().speed = walkAnimSpeed;
+        } else
+        {
+            model.GetComponent<Animator>().speed = 0;
+        }
 
 
         Vector3 move = transform.right * x + transform.forward * z;

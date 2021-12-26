@@ -8,6 +8,9 @@ TagManager:
   - Axe
   - Pickaxe
   - Terrain
+  - Sword
+  - PlayerAtkRange
+  - PlayerDmgRange
   layers:
   - Default
   - TransparentFX

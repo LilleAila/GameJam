@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class TreeScript : MonoBehaviour
 {
-    bool colliding = false;
+    [Range(0.1f, 10)] public float maxHealth;
+    float health;
+    bool inTrigger = false;
+
     public GameObject treeObject;
     // public GameObject woodItem;
     public ItemObject woodItemObject;
@@ -13,29 +16,38 @@ public class TreeScript : MonoBehaviour
     public int itemYOffset = 1;
     public InventoryObject inventory;
 
+    private void Start()
+    {
+        health = maxHealth;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Axe")
+        if(other.tag == "PlayerAtkRange")
         {
             // Debug.Log("Collided with axe");
-            colliding = true;
+            inTrigger = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.tag == "Axe")
+        if(other.tag == "PlayerAtkRange")
         {
             // Debug.Log("Not colliding with axe");
-            colliding = false;
+            inTrigger = false;
         }
     }
 
     private void Update()
     {
-        if(colliding)
+        if(inTrigger)
         {
             if(ChopTree.chopping && canChop)
+            {
+                health -= ChopTree.staticAtk * Time.deltaTime;
+            }
+            if(health <= 0 && canChop)
             {
                 treeObject.GetComponent<Rigidbody>().isKinematic = false;
                 // Instantiate(woodItem, this.transform.position + new Vector3(0, itemYOffset, 0), Quaternion.identity);

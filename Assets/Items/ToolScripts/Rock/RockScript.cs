@@ -4,41 +4,46 @@ using UnityEngine;
 
 public class RockScript : MonoBehaviour
 {
-    bool colliding = false;
-    // public GameObject rockObject;
-    // public GameObject stoneItem;
+    [Range(0.1f, 10)] public float maxHealth;
+    float health;
+    bool inTrigger = false;
+    public int minDrop = 1;
+    public int maxDrop = 4;
+
     public ItemObject stoneItemObject;
-    bool canMine = true;
     public InventoryObject inventory;
+
+    private void Start()
+    {
+        health = maxHealth;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" || other.tag == "Pickaxe")
+        if (other.tag == "PlayerAtkRange")
         {
             // Debug.Log("Collideing");
-            colliding = true;
+            inTrigger = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player" || other.tag == "Pickaxe")
+        if (other.tag == "PlayerAtkRange")
         {
             // Debug.Log("Not colliding");
-            colliding = false;
+            inTrigger = false;
         }
     }
 
     private void Update()
     {
-        if (colliding)
+        if (inTrigger && MineRock.mining)
         {
-            if (MineRock.mining && canMine)
+            health -= MineRock.staticAtk * Time.deltaTime;
+            if (health <= 0)
             {
-                // rockObject.GetComponent<Rigidbody>().isKinematic = false;
-                // Instantiate(stoneItem, this.transform.position, Quaternion.identity);
-                inventory.AddItem(new Item(stoneItemObject), Mathf.FloorToInt(Random.Range(1f, 4f)));
-                canMine = false;
+                inventory.AddItem(new Item(stoneItemObject), Mathf.FloorToInt(Random.Range((float)minDrop, (float)maxDrop)));
                 Destroy(this.gameObject);
             }
         }

@@ -24,7 +24,7 @@ public class MoveToPlayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "PlayerDmgRange")
         {
             canMove = false;
         }
@@ -32,7 +32,7 @@ public class MoveToPlayer : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "PlayerDmgRange")
         {
             canMove = true;
         }

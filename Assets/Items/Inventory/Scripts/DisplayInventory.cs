@@ -15,6 +15,9 @@ public class DisplayInventory : MonoBehaviour
 
     public GameObject handItem;
 
+    public ItemObject pickaxeObject;
+    public ItemObject axeObject;
+
     Dictionary<InventorySlot, GameObject> itemsDisplayed = new Dictionary<InventorySlot, GameObject>();
 
     // Start is called before the first frame update
@@ -27,20 +30,20 @@ public class DisplayInventory : MonoBehaviour
         for (int i = 0; i < inventory.Container.Items.Count; i++)
         {
             // Pickaxe ID is 0
-            if (inventory.Container.Items[i].ID == 0)
+            if (inventory.Container.Items[i].ID == pickaxeObject.Id)
             {
                 foundPick = true;
             }
 
             // Axe ID is 2
-            if (inventory.Container.Items[i].ID == 2)
+            if (inventory.Container.Items[i].ID == axeObject.Id)
             {
                 foundAxe = true;
             }
         }
 
-        if (!foundPick) inventory.Container.Items.Add(new InventorySlot(0, new Item(inventory.database.GetItem[0]), 1));
-        if (!foundAxe) inventory.Container.Items.Add(new InventorySlot(2, new Item(inventory.database.GetItem[2]), 1));
+        if (!foundPick) inventory.Container.Items.Add(new InventorySlot(0, new Item(pickaxeObject), 1));
+        if (!foundAxe) inventory.Container.Items.Add(new InventorySlot(2, new Item(axeObject), 1));
 
         CreateDisplay();
         itemInfo(HandItem.itemId);

@@ -23,6 +23,8 @@ MonoBehaviour:
     keys: 1b000000
   - name: Submit
     keys: 0d000000
+  - name: Attack
+    keys: 43010000
   axes:
   - name: Forward
     axes:

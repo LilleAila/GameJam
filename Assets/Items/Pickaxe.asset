@@ -21,3 +21,5 @@ MonoBehaviour:
   placeable: 0
   placePrefab: {fileID: 0}
   placeDistance: 5
+  edible: 0
+  restoreHealthValue: 0

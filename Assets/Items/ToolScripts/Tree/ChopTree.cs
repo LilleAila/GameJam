@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class ChopTree : MonoBehaviour
 {
+    [Range(0, 10)] public float atkPerSecond = 0;
+    public static float staticAtk;
     public static bool chopping = false;
+
+    private void Start()
+    {
+        staticAtk = atkPerSecond;
+    }
 
     // Update is called once per frame
     void Update()
