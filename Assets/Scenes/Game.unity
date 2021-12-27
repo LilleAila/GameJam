@@ -417,6 +417,10 @@ MonoBehaviour:
     spawnRadius: 25
     maxPerFrame: 7
     enemyPrefab: {fileID: 3153250090759912513, guid: b4adf6b85888f31449ceb1913da117da, type: 3}
+  - spawnChance: 10
+    spawnRadius: 25
+    maxPerFrame: 2
+    enemyPrefab: {fileID: 8909138314745496942, guid: 91d849a77864bb44a92c806f1a470992, type: 3}
   playerTransform: {fileID: 658088040}
   spawnSpeed: 2
 --- !u!1 &59201101
