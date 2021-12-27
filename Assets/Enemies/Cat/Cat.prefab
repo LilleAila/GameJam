@@ -93,6 +93,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 0.3
+  dropItem: 1
+  minDrop: 1
+  maxDrop: 2
+  itemToDrop: {fileID: 11400000, guid: c556d4c1e3f72e24db0c2e3a88dde2ec, type: 2}
+  inventory: {fileID: 11400000, guid: 32237d263fc976545b1b1a6740865df9, type: 2}
 --- !u!1001 &3400253861846951396
 PrefabInstance:
   m_ObjectHideFlags: 0

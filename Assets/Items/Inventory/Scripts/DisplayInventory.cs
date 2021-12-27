@@ -23,6 +23,7 @@ public class DisplayInventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        inventory.database.Reload();
         inventory.Load();
 
         bool foundPick = false;
@@ -42,10 +43,12 @@ public class DisplayInventory : MonoBehaviour
             }
         }
 
-        if (!foundPick) inventory.Container.Items.Add(new InventorySlot(0, new Item(pickaxeObject), 1));
-        if (!foundAxe) inventory.Container.Items.Add(new InventorySlot(2, new Item(axeObject), 1));
+        if (!foundPick) inventory.Container.Items.Add(new InventorySlot(pickaxeObject.Id, new Item(pickaxeObject), 1));
+        if (!foundAxe) inventory.Container.Items.Add(new InventorySlot(axeObject.Id, new Item(axeObject), 1));
 
         CreateDisplay();
+        // HandItem.itemId = pickaxeObject.Id;
+        HandItem.itemId = inventory.Container.Items[0].ID;
         itemInfo(HandItem.itemId);
     }
 
@@ -83,6 +86,7 @@ public class DisplayInventory : MonoBehaviour
     }
 
     public void itemInfo(int id) {
+        inventory.database.Reload();
         itemInfoSprite.GetComponent<Image>().sprite = inventory.database.GetItem[id].uiDisplay;
         itemNameText.GetComponent<TextMeshProUGUI>().text = inventory.database.GetItem[id].name;
 
@@ -107,6 +111,7 @@ public class DisplayInventory : MonoBehaviour
 
     public void UpdateDisplay()
     {
+        inventory.database.Reload();
         for (int i = 0; i < inventory.Container.Items.Count; i++)
         {
             InventorySlot slot = inventory.Container.Items[i];
@@ -132,6 +137,10 @@ public class DisplayInventory : MonoBehaviour
                 obj.GetComponent<Button>().onClick.RemoveAllListeners();
                 int id = slot.ID;
                 obj.GetComponent<Button>().onClick.AddListener(() => itemInfo(id));
+            }
+            if(slot.amount == 1)
+            {
+                itemsDisplayed[slot].GetComponentInChildren<TextMeshProUGUI>().text = "";
             }
         }
     }

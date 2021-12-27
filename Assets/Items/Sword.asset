@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c904f94b80ab3f44188d23b18e0a50e1, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  Id: 1
+  Id: 0
   uiDisplay: {fileID: 21300000, guid: 53c6a06a2dc544f4eb8862ed9b9a084a, type: 3}
   type: 2
   holdable: 1
@@ -21,4 +21,5 @@ MonoBehaviour:
   placeable: 0
   placePrefab: {fileID: 0}
   placeDistance: 5
-  Atk: 15
+  edible: 0
+  restoreHealthValue: 0

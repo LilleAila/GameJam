@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed42d78fc0f54341b016a8250ad848b, type: 3}
   m_Name: Furnace
   m_EditorClassIdentifier: 
-  Id: 8
+  Id: 6
   uiDisplay: {fileID: 21300000, guid: 925c8c70318acff4b8b1e507384aec0b, type: 3}
   type: 3
   holdable: 1
@@ -21,3 +21,5 @@ MonoBehaviour:
   placeable: 1
   placePrefab: {fileID: 7354140809058501713, guid: 652aae34c9cd5e0419c7d863cc2acc6f, type: 3}
   placeDistance: 5
+  edible: 0
+  restoreHealthValue: 0

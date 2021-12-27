@@ -11,15 +11,28 @@ public class ItemDatabaseObject : ScriptableObject, ISerializationCallbackReceiv
 
     public void OnAfterDeserialize()
     {
-        for (int i = 0; i < Items.Length; i++)
-        {
-            Items[i].Id = i;
-            GetItem.Add(i, Items[i]);
-        }
+        ReloadDictionary();
     }
 
     public void OnBeforeSerialize()
     {
         GetItem = new Dictionary<int, ItemObject>();
+    }
+
+    [ContextMenu("Reload Dictionary")]
+    public void Reload()
+    {
+        GetItem = new Dictionary<int, ItemObject>();
+        ReloadDictionary();
+        // Debug.Log("Reloaded Dictionary");
+    }
+
+    public void ReloadDictionary() {
+        // GetItem = new Dictionary<int, ItemObject>();
+        for (int i = 0; i < Items.Length; i++)
+        {
+            Items[i].Id = i;
+            GetItem.Add(i, Items[i]);
+        }
     }
 }

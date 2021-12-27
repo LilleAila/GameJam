@@ -8,6 +8,13 @@ public class EnemyScript : MonoBehaviour
     private float health;
     private bool inTrigger = false;
 
+    public bool dropItem;
+    public int minDrop;
+    public int maxDrop;
+    public ItemObject itemToDrop;
+
+    public InventoryObject inventory;
+
     private void Start()
     {
         health = maxHealth;
@@ -37,6 +44,7 @@ public class EnemyScript : MonoBehaviour
         }
         if (health <= 0)
         {
+            if(dropItem) inventory.AddItem(new Item(itemToDrop), Mathf.FloorToInt(Random.Range((float)minDrop, (float)maxDrop)));
             Destroy(this.gameObject);
         }
     }

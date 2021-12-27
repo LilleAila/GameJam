@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c290c24712ade7748b60cc7dc174e5d7, type: 3}
+  m_Name: Diamond Pickaxe
+  m_EditorClassIdentifier: 
+  Id: 19
+  uiDisplay: {fileID: 21300000, guid: 49cc56760ba89cd458bb14b95b615f45, type: 3}
+  type: 1
+  holdable: 1
+  squareSprite: 0
+  Prefab3DModel: {fileID: 1190605805670592023, guid: abf2ec1f5664b2844bdc7d2d57b7d8ea, type: 3}
+  placeable: 0
+  placePrefab: {fileID: 0}
+  placeDistance: 5
+  edible: 0
+  restoreHealthValue: 0

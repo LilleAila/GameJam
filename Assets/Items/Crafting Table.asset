@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed42d78fc0f54341b016a8250ad848b, type: 3}
   m_Name: Crafting Table
   m_EditorClassIdentifier: 
-  Id: 6
+  Id: 4
   uiDisplay: {fileID: 21300000, guid: 0f373270e203acc44b1e4bc20872a841, type: 3}
   type: 3
   holdable: 1
@@ -21,3 +21,5 @@ MonoBehaviour:
   placeable: 1
   placePrefab: {fileID: 2110046670670896427, guid: 920ce8146ce759849a289b60289ae3ff, type: 3}
   placeDistance: 5
+  edible: 0
+  restoreHealthValue: 0

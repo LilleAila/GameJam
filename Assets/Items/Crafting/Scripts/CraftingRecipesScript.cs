@@ -19,6 +19,7 @@ public class CraftingRecipesScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        inventory.database.Reload();
         craftingObjects = recipes.recipes;
         for (int i = 0; i < craftingObjects.Length; i++)
         {
@@ -34,6 +35,7 @@ public class CraftingRecipesScript : MonoBehaviour
     }
 
     public void showCraft(int index) {
+        inventory.database.Reload();
         foreach (Transform child in recipePanel.transform)
         {
             Destroy(child.gameObject);

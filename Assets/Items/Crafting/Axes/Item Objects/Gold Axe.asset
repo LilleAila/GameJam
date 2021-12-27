@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c290c24712ade7748b60cc7dc174e5d7, type: 3}
   m_Name: Gold Axe
   m_EditorClassIdentifier: 
-  Id: 17
+  Id: 14
   uiDisplay: {fileID: 21300000, guid: 8257eea5af12a504c8f3b6f6bba49b1c, type: 3}
   type: 1
   holdable: 1

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed42d78fc0f54341b016a8250ad848b, type: 3}
   m_Name: Stone
   m_EditorClassIdentifier: 
-  Id: 7
+  Id: 5
   uiDisplay: {fileID: 21300000, guid: 0a4617fb3f4c2014dbe22511c65418c7, type: 3}
   type: 3
   holdable: 1
@@ -21,3 +21,5 @@ MonoBehaviour:
   placeable: 0
   placePrefab: {fileID: 0}
   placeDistance: 5
+  edible: 0
+  restoreHealthValue: 0
