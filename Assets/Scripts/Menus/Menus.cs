@@ -12,11 +12,12 @@ public class Menus : MonoBehaviour {
 
     public InventoryObject inventory;
 
-    private bool menuOpen = false;
+    public static bool menuOpen = false;
 
-    public bool GameIsPaused = false;
-    public bool invOpen = false;
-    public bool craftingOpen = false;
+    public static bool GameIsPaused = false;
+    public static bool invOpen = false;
+    public static bool craftingOpen = false;
+    // public static bool furnaceOpen = false;
 
     public GameObject inventoryGameObject;
 
@@ -40,6 +41,11 @@ public class Menus : MonoBehaviour {
             {
                 closeCrafting();
             }
+            //if(furnaceOpen)
+            //{
+            //    GetComponent<FurnaceUIs>().CloseFurnaces();
+            //}
+            FindObjectOfType<AudioManager>().Stop("walking");
         }
 
         if(InputManager.GetKeyDown("Inventory"))
@@ -55,6 +61,11 @@ public class Menus : MonoBehaviour {
             {
                 closeCrafting();
             }
+            //if (furnaceOpen)
+            //{
+            //    GetComponent<FurnaceUIs>().CloseFurnaces();
+            //}
+            FindObjectOfType<AudioManager>().Stop("walking");
         }
     }
 
@@ -81,6 +92,7 @@ public class Menus : MonoBehaviour {
         PauseMenuUI.SetActive(false);
         GameIsPaused = false;
         Lock();
+        FindObjectOfType<AudioManager>().Play("click");
     }
 
     public void Pause()
@@ -88,6 +100,7 @@ public class Menus : MonoBehaviour {
         PauseMenuUI.SetActive(true);
         GameIsPaused = true;
         Unlock();
+        FindObjectOfType<AudioManager>().Play("click");
     }
 
     // Inventory
@@ -96,6 +109,7 @@ public class Menus : MonoBehaviour {
         InvUI.SetActive(false);
         invOpen = false;
         Lock();
+        FindObjectOfType<AudioManager>().Play("click");
     }
 
     public void openInv()
@@ -103,6 +117,7 @@ public class Menus : MonoBehaviour {
         InvUI.SetActive(true);
         invOpen = true;
         Unlock();
+        FindObjectOfType<AudioManager>().Play("click");
     }
 
     // Crafting
@@ -112,6 +127,7 @@ public class Menus : MonoBehaviour {
         CraftingUI.SetActive(true);
         craftingOpen = true;
         Unlock();
+        FindObjectOfType<AudioManager>().Play("click");
     }
 
     public void closeCrafting()
@@ -119,6 +135,7 @@ public class Menus : MonoBehaviour {
         CraftingUI.SetActive(false);
         craftingOpen = false;
         Lock();
+        FindObjectOfType<AudioManager>().Play("click");
     }
 
     // Load menu scene and set time back to 1
@@ -130,6 +147,7 @@ public class Menus : MonoBehaviour {
         }
         inventory.Save();
         Time.timeScale = 1f;
+        FindObjectOfType<AudioManager>().Play("click");
         SceneManager.LoadScene(MenuScene);
     }
 
@@ -144,6 +162,7 @@ public class Menus : MonoBehaviour {
     public void QuitGame()
     {
         inventory.Save();
+        FindObjectOfType<AudioManager>().Play("click");
         Debug.Log("Quitting Game...");
         Application.Quit();
     }

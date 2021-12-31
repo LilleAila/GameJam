@@ -15,7 +15,7 @@ public class ZoomToCube : MonoBehaviour
 
         cubeClicked = true;
 
-        SettingsMenu.difficulty = index;
+        // SettingsMenu.difficulty = index;
     }
 
     private void Update()

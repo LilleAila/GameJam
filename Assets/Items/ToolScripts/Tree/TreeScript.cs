@@ -16,6 +16,8 @@ public class TreeScript : MonoBehaviour
     public int itemYOffset = 1;
     public InventoryObject inventory;
 
+    // bool wasInTrigger = false;
+
     private void Start()
     {
         health = maxHealth;
@@ -23,19 +25,22 @@ public class TreeScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "PlayerAtkRange")
+        if(other.tag == "PlayerMiningRange")
         {
             // Debug.Log("Collided with axe");
             inTrigger = true;
+            FindObjectOfType<AudioManager>().Stop("chopTree");
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.tag == "PlayerAtkRange")
+        if(other.tag == "PlayerMiningRange")
         {
             // Debug.Log("Not colliding with axe");
             inTrigger = false;
+            // wasInTrigger = false;
+            FindObjectOfType<AudioManager>().Stop("chopTree");
         }
     }
 
@@ -43,10 +48,14 @@ public class TreeScript : MonoBehaviour
     {
         if(inTrigger)
         {
-            if(ChopTree.chopping && canChop)
+            if (inTrigger && ChopTree.chopping) StartCoroutine(FindObjectOfType<AudioManager>().PlayLoop("chopTree", 0.5f, 0.1f));
+            else FindObjectOfType<AudioManager>().Stop("chopTree");
+
+            if (ChopTree.chopping && canChop)
             {
                 health -= ChopTree.staticAtk * Time.deltaTime;
             }
+
             if(health <= 0 && canChop)
             {
                 treeObject.GetComponent<Rigidbody>().isKinematic = false;
@@ -58,7 +67,10 @@ public class TreeScript : MonoBehaviour
                 }
                 canChop = false;
 
-                Invoke("DisableGravity", 5);
+                Destroy(gameObject.GetComponent<TreeScript>());
+                treeObject.layer = 12;
+
+                // Invoke("DisableGravity", 5);
                 Destroy(this.gameObject, 60.0f);
             }
         }

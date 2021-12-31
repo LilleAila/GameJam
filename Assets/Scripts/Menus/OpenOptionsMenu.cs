@@ -9,6 +9,8 @@ public class OpenOptionsMenu : MonoBehaviour
 
     public void Options()
     {
+        FindObjectOfType<AudioManager>().Play("click");
+        PlayerPrefs.Save();
         SceneManager.LoadScene(OptionsMenuScene);
     }
 }

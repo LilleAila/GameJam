@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class SettingsMenu : MonoBehaviour
 {
-    // public AudioMixer audioMixer;
+    public AudioMixer audioMixer;
     // public GameObject volumeSlider;
     // public GameObject FOVSlider;
 
@@ -19,8 +19,24 @@ public class SettingsMenu : MonoBehaviour
 
     public static float FOV = 60;
     public static float masterVolume = 0;
-    public static int difficulty = 3;
+    // public static int difficulty = 3;
     public static int Sensitivity = 500;
+
+    private void Awake()
+    {
+        // FOV = PlayerPrefs.GetFloat("FOV");
+        // masterVolume = PlayerPrefs.GetFloat("masterVolume");
+        // Sensitivity = PlayerPrefs.GetInt("sensitivity");
+
+        if (PlayerPrefs.HasKey("FOV")) FOV = PlayerPrefs.GetFloat("FOV");
+        if (PlayerPrefs.HasKey("masterVolume")) masterVolume = PlayerPrefs.GetFloat("masterVolume");
+        if (PlayerPrefs.HasKey("sensitivity")) Sensitivity = PlayerPrefs.GetInt("sensitivity");
+    }
+
+    private void Start()
+    {
+        audioMixer.SetFloat("volume", SettingsMenu.masterVolume);
+    }
 
     /*private void OnEnable()
     {
@@ -31,6 +47,7 @@ public class SettingsMenu : MonoBehaviour
 
     // Volume
     public void openVolume() {
+        FindObjectOfType<AudioManager>().Play("click");
         SceneManager.LoadScene(VolumeScene);
     }
 
@@ -43,6 +60,7 @@ public class SettingsMenu : MonoBehaviour
     // FOV
     public void openFOV()
     {
+        FindObjectOfType<AudioManager>().Play("click");
         SceneManager.LoadScene(FOVScene);
     }
 
@@ -53,16 +71,19 @@ public class SettingsMenu : MonoBehaviour
 
     public void openSensitivity()
     {
+        FindObjectOfType<AudioManager>().Play("click");
         SceneManager.LoadScene(SensitivityScene);
     }
 
     public void MainMenu()
     {
+        FindObjectOfType<AudioManager>().Play("click");
         SceneManager.LoadScene(MainMenuScene);
     }
 
     public void ControlsMenu()
     {
+        FindObjectOfType<AudioManager>().Play("click");
         SceneManager.LoadScene(ControlsScene);
     }
 }

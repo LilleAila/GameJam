@@ -128,4 +128,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 32237d263fc976545b1b1a6740865df9, type: 2}
-  furnaceUIPrefab: {fileID: 0}
+  furnaceUIPrefab: {fileID: 1828236338897211225, guid: d85082f1102f5d9479cef963c086d972, type: 3}

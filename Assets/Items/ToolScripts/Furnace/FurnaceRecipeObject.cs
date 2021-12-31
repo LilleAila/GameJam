@@ -6,7 +6,7 @@ using UnityEngine;
 public class FurnaceRecipeObject : ScriptableObject
 {
     public int time;
-    public FurnaceRecipe[] recipe;
+    public ItemObject recipe;
     public FurnaceRecipe output;
 }
 

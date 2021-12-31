@@ -86,6 +86,7 @@ public class DisplayInventory : MonoBehaviour
     }
 
     public void itemInfo(int id) {
+        FindObjectOfType<AudioManager>().Play("click");
         inventory.database.Reload();
         itemInfoSprite.GetComponent<Image>().sprite = inventory.database.GetItem[id].uiDisplay;
         itemNameText.GetComponent<TextMeshProUGUI>().text = inventory.database.GetItem[id].name;

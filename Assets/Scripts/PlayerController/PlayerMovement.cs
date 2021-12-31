@@ -35,6 +35,14 @@ public class PlayerMovement : MonoBehaviour
     /*public int sprintSpeedIncrease = 10;
     public int sprintFOVIncrease = 15;*/
 
+    bool isWalking = false;
+
+    public float groundWalkingSoundDistance = 1f;
+    bool playWalkSound = false;
+
+    public float walkingSoundDelay = 0.6f;
+    public float sprintingSoundDelay = 0.3f;
+
     void Start()
     {
         // velocity.y = -200f;
@@ -44,17 +52,29 @@ public class PlayerMovement : MonoBehaviour
         playerCamera.GetComponent<Camera>().fieldOfView = SettingsMenu.FOV;
 
         // Debug.Log(SettingsMenu.difficulty);
+
+        // FindObjectOfType<AudioManager>().Play("music");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(InputManager.GetKeyDown("Submit"))
+        if (playWalkSound && isWalking) StartCoroutine(FindObjectOfType<AudioManager>().PlayLoop("walking", walkingSoundDelay, 0f));
+        else FindObjectOfType<AudioManager>().Stop("walking");
+
+        if (isWalking)
         {
-            PlayerHealth.hp -= 0.1f;
+            if (sprinting) FindObjectOfType<AudioManager>().SetLoopDelay("walking", sprintingSoundDelay);
+            else FindObjectOfType<AudioManager>().SetLoopDelay("walking", walkingSoundDelay);
         }
 
+        /* if(InputManager.GetKeyDown("Submit"))
+        {
+            PlayerHealth.hp -= 0.1f;
+        } */
+
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        playWalkSound = Physics.CheckSphere(groundCheck.position, groundWalkingSoundDistance, groundMask);
 
         if(isGrounded && velocity.y < 0)
         {
@@ -114,9 +134,11 @@ public class PlayerMovement : MonoBehaviour
         if(x != 0 || z != 0)
         {
             GetComponent<CameraBobbing>().isWalking = true;
+            isWalking = true;
         } else
         {
             GetComponent<CameraBobbing>().isWalking = false;
+            isWalking = false;
         }
     }
 }

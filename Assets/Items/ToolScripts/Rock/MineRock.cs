@@ -16,16 +16,17 @@ public class MineRock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Left Mouse"))
+        if (InputManager.GetKeyDown("Attack"))
         {
             GetComponent<Animator>().speed = 1;
             GetComponent<Animator>().Play("MineRock");
             mining = true;
         }
-        else if (Input.GetButtonUp("Left Mouse"))
+        else if (InputManager.GetKeyUp("Attack"))
         {
             GetComponent<Animator>().speed = 0;
             mining = false;
+            FindObjectOfType<AudioManager>().Stop("mineRock");
         }
     }
 }

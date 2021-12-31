@@ -25,6 +25,7 @@ public class SetSensitivity : MonoBehaviour
         cubeClicked = true;
 
         SettingsMenu.Sensitivity = 100 * index + 200;
+        PlayerPrefs.SetInt("sensitivity", SettingsMenu.Sensitivity);
     }
 
     private void Update()

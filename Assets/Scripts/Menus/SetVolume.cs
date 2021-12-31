@@ -29,6 +29,8 @@ public class SetVolume : MonoBehaviour
 
         SettingsMenu.masterVolume = index * 20 - 100;
         audioMixer.SetFloat("volume", SettingsMenu.masterVolume);
+
+        PlayerPrefs.SetFloat("masterVolume", SettingsMenu.masterVolume);
     }
 
     private void Update()

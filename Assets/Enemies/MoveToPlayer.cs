@@ -7,8 +7,8 @@ public class MoveToPlayer : MonoBehaviour
     Transform playerTransform;
     public string playerName = "First Person Player";
     public float speed = 5f;
-    bool canMove = true;
-    [Range(0, 1)] public float damagePerSecond= 0;
+    bool canAttack = true;
+    [Range(0, 1)] public float damagePerSecond = 0;
 
     private void Start()
     {
@@ -19,14 +19,14 @@ public class MoveToPlayer : MonoBehaviour
     {
         transform.LookAt(playerTransform);
         transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, Time.deltaTime * speed);
-        if (!canMove) PlayerHealth.hp -= damagePerSecond * Time.deltaTime;
+        if (!canAttack) PlayerHealth.hp -= damagePerSecond * Time.deltaTime;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "PlayerDmgRange")
         {
-            canMove = false;
+            canAttack = false;
         }
     }
 
@@ -34,7 +34,7 @@ public class MoveToPlayer : MonoBehaviour
     {
         if(other.tag == "PlayerDmgRange")
         {
-            canMove = true;
+            canAttack = true;
         }
     }
 }

@@ -35,6 +35,7 @@ public class CraftingRecipesScript : MonoBehaviour
     }
 
     public void showCraft(int index) {
+        FindObjectOfType<AudioManager>().Play("click");
         inventory.database.Reload();
         foreach (Transform child in recipePanel.transform)
         {
@@ -56,6 +57,7 @@ public class CraftingRecipesScript : MonoBehaviour
     }
 
     public void craft(int index) {
+        FindObjectOfType<AudioManager>().Play("click");
         Recipe[] recipe = recipes.recipes[index].recipe;
 
         bool hasItems;

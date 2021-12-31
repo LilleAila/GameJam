@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Settings/FOV.unity
     guid: 112dec5943c4fb143a16733fce4bbc51
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Settings/Volume.unity
     guid: 40fe289b6ff098049bb8ea889913bc62
   - enabled: 1

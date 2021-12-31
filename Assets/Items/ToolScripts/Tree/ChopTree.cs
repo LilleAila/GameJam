@@ -16,16 +16,17 @@ public class ChopTree : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Left Mouse"))
+        if (InputManager.GetKeyDown("Attack"))
         {
             GetComponent<Animator>().speed = 1;
             GetComponent<Animator>().Play("ChopTree");
             chopping = true;
         }
-        else if (Input.GetButtonUp("Left Mouse"))
+        else if (InputManager.GetKeyUp("Attack"))
         {
             GetComponent<Animator>().speed = 0;
             chopping = false;
+            FindObjectOfType<AudioManager>().Stop("chopTree");
         }
     }
 }

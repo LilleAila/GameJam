@@ -43,6 +43,11 @@ public class Inventory : MonoBehaviour
         inventory.Load();
     }
 
+    public void PlayClick()
+    {
+        FindObjectOfType<AudioManager>().Play("click");
+    }
+
     private void OnApplicationQuit()
     {
         inventory.Container.Items.Clear();

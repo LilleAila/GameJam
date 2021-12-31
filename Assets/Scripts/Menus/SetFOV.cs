@@ -25,6 +25,7 @@ public class SetFOV : MonoBehaviour
         cubeClicked = true;
 
         SettingsMenu.FOV = 30 * index;
+        PlayerPrefs.SetFloat("FOV", SettingsMenu.FOV);
     }
 
     private void Update()

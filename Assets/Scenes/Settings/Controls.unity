@@ -1136,6 +1136,8 @@ MonoBehaviour:
   inputs: {fileID: 11400000, guid: e2a4527d072c51143b00254329c0ebb9, type: 2}
   inputsParent: {fileID: 104559412}
   inputPrefab: {fileID: 9130148450917510645, guid: 3e4549821201fc34cb52a9c7a33d2c51, type: 3}
+  keyPrefab: {fileID: 0}
+  axisPrefab: {fileID: 0}
 --- !u!224 &1030200750 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9130148450917510646, guid: 3e4549821201fc34cb52a9c7a33d2c51, type: 3}
@@ -1987,7 +1989,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1336219203}
   m_HandleRect: {fileID: 1336219202}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

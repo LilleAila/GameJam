@@ -13,6 +13,8 @@ public class RockScript : MonoBehaviour
     public ItemObject stoneItemObject;
     public InventoryObject inventory;
 
+    // bool wasInTrigger = false;
+
     private void Start()
     {
         health = maxHealth;
@@ -20,24 +22,36 @@ public class RockScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "PlayerAtkRange")
+        if (other.tag == "PlayerMiningRange")
         {
             // Debug.Log("Collideing");
             inTrigger = true;
+            FindObjectOfType<AudioManager>().Stop("mineRock");
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "PlayerAtkRange")
+        if (other.tag == "PlayerMiningRange")
         {
             // Debug.Log("Not colliding");
             inTrigger = false;
+            // wasInTrigger = false;
+            FindObjectOfType<AudioManager>().Stop("mineRock");
         }
     }
 
     private void Update()
     {
+        /* if (inTrigger && !FindObjectOfType<AudioManager>().getSound("mineRock").playingLoop && MineRock.mining)
+            StartCoroutine(FindObjectOfType<AudioManager>().PlayLoop("mineRock", 0.5f, 0.1f)); */
+
+        if(inTrigger)
+        {
+            if (inTrigger && MineRock.mining) StartCoroutine(FindObjectOfType<AudioManager>().PlayLoop("mineRock", 0.5f, 0.1f));
+            else FindObjectOfType<AudioManager>().Stop("mineRock");
+        }
+
         if (inTrigger && MineRock.mining)
         {
             health -= MineRock.staticAtk * Time.deltaTime;
