@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviour
         foreach(Sound s in soundObject.sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
+            s.source.clip = s.clips[0];
 
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
@@ -36,18 +36,19 @@ public class AudioManager : MonoBehaviour
 
     public void Play(string name)
     {
-        Sound s = Array.Find(soundObject.sounds, sound => sound.name == name);
+        Sound s = getSound(name);
         if (s == null)
         {
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
         }
         s.source.Play();
+        s.playing = true;
     }
 
     public void Stop(string name)
     {
-        Sound s = Array.Find(soundObject.sounds, sound => sound.name == name);
+        Sound s = getSound(name);
         if (s == null)
         {
             Debug.LogWarning("Sound: " + name + " not found!");
@@ -56,39 +57,19 @@ public class AudioManager : MonoBehaviour
         s.source.Stop();
         s.playingLoop = false;
         // s.coroutineRunning = false;
+
+        s.playing = false;
     }
 
-    public IEnumerator PlayLoop(string name, float delay, float waitFirst) {
-        yield return new WaitForSeconds(waitFirst);
-        Sound s = Array.Find(soundObject.sounds, sound => sound.name == name);
-        if(s == null)
-        {
-            Debug.LogWarning("Sound " + name + " not found!");
-            yield break;
-        }
-        if(s.coroutineRunning) yield break;
-        s.coroutineRunning = true;
-        s.playingLoop = true;
-        s.loopDelay = delay;
-        while(s.playingLoop)
-        {
-            // Debug.Log(name);
-            Play(name);
-            yield return new WaitForSeconds(s.loopDelay);
-            if (!s.playingLoop) s.coroutineRunning = false;
-        }
-        s.coroutineRunning = false;
-    }
-
-    public void SetLoopDelay(string name, float newDelay)
+    public void SetClip(string name, int clipIndex)
     {
-        Sound s = Array.Find(soundObject.sounds, sound => sound.name == name);
-        if(s == null)
+        Sound s = getSound(name);
+        if (s == null)
         {
-            Debug.LogWarning("Sound " + name + " not found!");
+            Debug.LogWarning("Sound: " + name + " not found!");
             return;
         }
-        s.loopDelay = newDelay;
+        s.source.clip = s.clips[clipIndex];
     }
 
     public Sound getSound(string name)

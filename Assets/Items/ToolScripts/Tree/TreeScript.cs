@@ -16,6 +16,8 @@ public class TreeScript : MonoBehaviour
     public int itemYOffset = 1;
     public InventoryObject inventory;
 
+    bool soundPlaying = false;
+
     // bool wasInTrigger = false;
 
     private void Start()
@@ -30,6 +32,7 @@ public class TreeScript : MonoBehaviour
             // Debug.Log("Collided with axe");
             inTrigger = true;
             FindObjectOfType<AudioManager>().Stop("chopTree");
+            soundPlaying = false;
         }
     }
 
@@ -41,6 +44,7 @@ public class TreeScript : MonoBehaviour
             inTrigger = false;
             // wasInTrigger = false;
             FindObjectOfType<AudioManager>().Stop("chopTree");
+            soundPlaying = false;
         }
     }
 
@@ -48,8 +52,18 @@ public class TreeScript : MonoBehaviour
     {
         if(inTrigger)
         {
-            if (inTrigger && ChopTree.chopping) StartCoroutine(FindObjectOfType<AudioManager>().PlayLoop("chopTree", 0.5f, 0.1f));
-            else FindObjectOfType<AudioManager>().Stop("chopTree");
+            // if (inTrigger && ChopTree.chopping && !FindObjectOfType<AudioManager>().getSound("chopTree").coroutineRunning) StartCoroutine(FindObjectOfType<AudioManager>().PlayLoop("chopTree", 0.5f, 0.1f));
+            // else FindObjectOfType<AudioManager>().Stop("chopTree");
+
+            if(ChopTree.chopping && !soundPlaying)
+            {
+                FindObjectOfType<AudioManager>().Play("chopTree");
+                soundPlaying = true;
+            } else if(!ChopTree.chopping)
+            {
+                FindObjectOfType<AudioManager>().Stop("chopTree");
+                soundPlaying = false;
+            }
 
             if (ChopTree.chopping && canChop)
             {
@@ -66,6 +80,11 @@ public class TreeScript : MonoBehaviour
                     inventory.AddItem(new Item(squirrelItemObject), 1);
                 }
                 canChop = false;
+
+                FindObjectOfType<AudioManager>().Stop("chopTree");
+                soundPlaying = false;
+
+                FindObjectOfType<AudioManager>().Play("lastChop");
 
                 Destroy(gameObject.GetComponent<TreeScript>());
                 treeObject.layer = 12;

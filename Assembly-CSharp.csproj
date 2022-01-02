@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\ProceduralGeneration\Terrain4\GenerateMesh4.cs" />
     <Compile Include="Assets\Scripts\PlayerController\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerController\CameraBobbing.cs" />
+    <Compile Include="Assets\Scripts\SoundObject.cs" />
     <Compile Include="Assets\Scripts\PlayerController\EatFood.cs" />
     <Compile Include="Assets\Scripts\Lighting\LightingManager.cs" />
     <Compile Include="Assets\Scripts\Sound.cs" />
@@ -120,7 +121,7 @@
     <Compile Include="Assets\Items\ToolScripts\Furnace\FurnaceUIs.cs" />
     <Compile Include="Assets\Items\Inventory\Scripts\InventoryObject.cs" />
     <Compile Include="Assets\Items\Scripts\FoodObject.cs" />
-    <Compile Include="Assets\Scripts\SoundObject.cs" />
+    <Compile Include="Assets\Enemies\Cat\CatScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

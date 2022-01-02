@@ -40,8 +40,10 @@ public class PlayerMovement : MonoBehaviour
     public float groundWalkingSoundDistance = 1f;
     bool playWalkSound = false;
 
-    public float walkingSoundDelay = 0.6f;
-    public float sprintingSoundDelay = 0.3f;
+    bool soundPlaying = false;
+
+    // public float walkingSoundDelay = 0.6f;
+    // public float sprintingSoundDelay = 0.3f;
 
     void Start()
     {
@@ -56,22 +58,51 @@ public class PlayerMovement : MonoBehaviour
         // FindObjectOfType<AudioManager>().Play("music");
     }
 
+    void stopSound()
+    {
+        FindObjectOfType<AudioManager>().Stop("walking");
+        soundPlaying = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (playWalkSound && isWalking) StartCoroutine(FindObjectOfType<AudioManager>().PlayLoop("walking", walkingSoundDelay, 0f));
+        /* if (playWalkSound && isWalking && !FindObjectOfType<AudioManager>().getSound("walking").coroutineRunning) StartCoroutine(FindObjectOfType<AudioManager>().PlayLoop("walking", walkingSoundDelay, 0f));
         else FindObjectOfType<AudioManager>().Stop("walking");
 
         if (isWalking)
         {
             if (sprinting) FindObjectOfType<AudioManager>().SetLoopDelay("walking", sprintingSoundDelay);
             else FindObjectOfType<AudioManager>().SetLoopDelay("walking", walkingSoundDelay);
-        }
+        } */
 
         /* if(InputManager.GetKeyDown("Submit"))
         {
             PlayerHealth.hp -= 0.1f;
         } */
+
+        if (InputManager.GetKeyDown("Sprint"))
+        {
+            FindObjectOfType<AudioManager>().SetClip("walking", 1);
+            stopSound();
+        }
+        else if (InputManager.GetKeyUp("Sprint"))
+        {
+            FindObjectOfType<AudioManager>().SetClip("walking", 0);
+            stopSound();
+        }
+
+        if (!playWalkSound) stopSound();
+
+        if (isWalking && !soundPlaying && playWalkSound)
+        {
+            FindObjectOfType<AudioManager>().Play("walking");
+            soundPlaying = true;
+        }
+        else if (!isWalking)
+        {
+            stopSound();
+        }
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         playWalkSound = Physics.CheckSphere(groundCheck.position, groundWalkingSoundDistance, groundMask);

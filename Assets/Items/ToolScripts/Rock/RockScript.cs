@@ -13,6 +13,8 @@ public class RockScript : MonoBehaviour
     public ItemObject stoneItemObject;
     public InventoryObject inventory;
 
+    bool soundPlaying = false;
+
     // bool wasInTrigger = false;
 
     private void Start()
@@ -48,8 +50,19 @@ public class RockScript : MonoBehaviour
 
         if(inTrigger)
         {
-            if (inTrigger && MineRock.mining) StartCoroutine(FindObjectOfType<AudioManager>().PlayLoop("mineRock", 0.5f, 0.1f));
-            else FindObjectOfType<AudioManager>().Stop("mineRock");
+            // if (inTrigger && MineRock.mining && !FindObjectOfType<AudioManager>().getSound("mineRock").coroutineRunning) StartCoroutine(FindObjectOfType<AudioManager>().PlayLoop("mineRock", 0.5f, 0.1f));
+            // else FindObjectOfType<AudioManager>().Stop("mineRock");
+
+            if (MineRock.mining && !soundPlaying)
+            {
+                FindObjectOfType<AudioManager>().Play("mineRock");
+                soundPlaying = true;
+            }
+            else if (!MineRock.mining)
+            {
+                FindObjectOfType<AudioManager>().Stop("mineRock");
+                soundPlaying = false;
+            }
         }
 
         if (inTrigger && MineRock.mining)
@@ -58,6 +71,8 @@ public class RockScript : MonoBehaviour
             if (health <= 0)
             {
                 inventory.AddItem(new Item(stoneItemObject), Mathf.FloorToInt(Random.Range((float)minDrop, (float)maxDrop)));
+                FindObjectOfType<AudioManager>().Stop("mineRock");
+                FindObjectOfType<AudioManager>().Play("lastRockMine");
                 Destroy(this.gameObject);
             }
         }

@@ -299,8 +299,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    - Class: 850595691
-      Script: {instanceID: 0}
     Assets/Scenes/Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -434,8 +432,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 245
       Script: {instanceID: 0}
-    - Class: 850595691
-      Script: {instanceID: 0}
     Assets/Scenes/Options.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -498,8 +494,6 @@ ScriptsOnlyBuild:
     - Class: 243
       Script: {instanceID: 0}
     - Class: 245
-      Script: {instanceID: 0}
-    - Class: 850595691
       Script: {instanceID: 0}
     Assets/Scenes/Settings/FOV.unity:
     - Class: 1
@@ -566,8 +560,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    - Class: 850595691
-      Script: {instanceID: 0}
     Assets/Scenes/Settings/Sensitivity.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -632,8 +624,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1100,7 +1090,7 @@ ScriptsOnlyBuild:
     className: FlatTeardrop
   - hash:
       serializedVersion: 2
-      Hash: 6e4d574109a9c564eba6f752202b2901
+      Hash: eeb01d00173e1c8697c346c512430570
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SoundObject
@@ -1670,7 +1660,7 @@ ScriptsOnlyBuild:
     className: MotionBlur
   - hash:
       serializedVersion: 2
-      Hash: d5e8ca22957837050c70d9e225f88418
+      Hash: 1432fbb14ef688c6f85262d427db2341
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement

@@ -20,11 +20,13 @@ public class HitEnemy : MonoBehaviour
             GetComponent<Animator>().speed = 1;
             GetComponent<Animator>().Play("Sword");
             attacking = true;
+            FindObjectOfType<AudioManager>().Play("hitEnemy");
         }
 
         if (InputManager.GetKeyUp("Attack")) {
             GetComponent<Animator>().speed = 0;
             attacking = false;
+            FindObjectOfType<AudioManager>().Stop("hitEnemy");
         }
     }
 }

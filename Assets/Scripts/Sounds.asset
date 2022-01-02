@@ -14,47 +14,111 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: chopTree
-    clip: {fileID: 8300000, guid: 7ea35ca413d29254493e9f313e942739, type: 3}
-    volume: 1
-    pitch: 0.5
-    loop: 0
-    source: {fileID: 0}
-    playingLoop: 0
-    loopDelay: 0.5
-    coroutineRunning: 1
-  - name: mineRock
-    clip: {fileID: 8300000, guid: ef16ecf73c05b54489c3f5f228106c8a, type: 3}
+    clips:
+    - {fileID: 8300000, guid: 7ea35ca413d29254493e9f313e942739, type: 3}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
+    activeClip: 0
     source: {fileID: 0}
     playingLoop: 0
     loopDelay: 0.5
     coroutineRunning: 0
-  - name: walking
-    clip: {fileID: 8300000, guid: 75689f1f56b0ee348aca693ec1cb20f8, type: 3}
-    volume: 0.6
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-    playingLoop: 0
-    loopDelay: 0.5
-    coroutineRunning: 1
-  - name: click
-    clip: {fileID: 8300000, guid: c174c155926931a4f85632611c7a047f, type: 3}
+    playing: 0
+  - name: lastChop
+    clips:
+    - {fileID: 8300000, guid: 06fdf7551c760d94cabb09552574b938, type: 3}
     volume: 1
-    pitch: 1
+    pitch: 0.8
     loop: 0
+    activeClip: 0
     source: {fileID: 0}
     playingLoop: 0
     loopDelay: 0
     coroutineRunning: 0
+    playing: 1
+  - name: mineRock
+    clips:
+    - {fileID: 8300000, guid: ef16ecf73c05b54489c3f5f228106c8a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    activeClip: 0
+    source: {fileID: 0}
+    playingLoop: 0
+    loopDelay: 0.5
+    coroutineRunning: 0
+    playing: 0
+  - name: lastRockMine
+    clips:
+    - {fileID: 8300000, guid: ef16ecf73c05b54489c3f5f228106c8a, type: 3}
+    volume: 1
+    pitch: 0.7
+    loop: 0
+    activeClip: 0
+    source: {fileID: 0}
+    playingLoop: 0
+    loopDelay: 0
+    coroutineRunning: 0
+    playing: 1
+  - name: walking
+    clips:
+    - {fileID: 8300000, guid: 162b9b8e243dfa8448db6980fdd93ae1, type: 3}
+    - {fileID: 8300000, guid: 75689f1f56b0ee348aca693ec1cb20f8, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 1
+    activeClip: 0
+    source: {fileID: 0}
+    playingLoop: 0
+    loopDelay: 0
+    coroutineRunning: 0
+    playing: 0
+  - name: click
+    clips:
+    - {fileID: 8300000, guid: c174c155926931a4f85632611c7a047f, type: 3}
+    volume: 1
+    pitch: 0.9
+    loop: 0
+    activeClip: 0
+    source: {fileID: 0}
+    playingLoop: 0
+    loopDelay: 0
+    coroutineRunning: 0
+    playing: 1
   - name: music
-    clip: {fileID: 8300000, guid: 095df417df7f8c6478afde51a662fbdb, type: 3}
+    clips:
+    - {fileID: 8300000, guid: 095df417df7f8c6478afde51a662fbdb, type: 3}
     volume: 0.4
     pitch: 0.9
     loop: 1
+    activeClip: 0
     source: {fileID: 0}
     playingLoop: 0
     loopDelay: 0
     coroutineRunning: 0
+    playing: 0
+  - name: meow
+    clips:
+    - {fileID: 8300000, guid: 7999799379c89da41889ac9a70462823, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    activeClip: 0
+    source: {fileID: 0}
+    playingLoop: 0
+    loopDelay: 0
+    coroutineRunning: 0
+    playing: 0
+  - name: hitEnemy
+    clips:
+    - {fileID: 8300000, guid: cf26a4ba611377b4db6bed98ae5d61db, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    activeClip: 0
+    source: {fileID: 0}
+    playingLoop: 0
+    loopDelay: 0
+    coroutineRunning: 0
+    playing: 1
