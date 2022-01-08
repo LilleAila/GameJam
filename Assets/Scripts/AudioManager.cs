@@ -12,6 +12,8 @@ public class AudioManager : MonoBehaviour
 
     public bool dontDestroyOnLoad = true;
 
+    // public AudioMixer mixer;
+
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -31,6 +33,8 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+
+            // s.source.outputAudioMixerGroup = mixer.outputAudioMixerGroup;
         }
     }
 

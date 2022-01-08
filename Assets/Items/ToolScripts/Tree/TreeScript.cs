@@ -87,7 +87,9 @@ public class TreeScript : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("lastChop");
 
                 Destroy(gameObject.GetComponent<TreeScript>());
-                treeObject.layer = 12;
+
+                // Set the layer to DontCOllideWithPlayer
+                // treeObject.layer = 12;
 
                 // Invoke("DisableGravity", 5);
                 Destroy(this.gameObject, 60.0f);

@@ -60,7 +60,6 @@ public class EnemyScript : MonoBehaviour
         if (health <= 0)
         {
             if(dropItem) inventory.AddItem(new Item(itemToDrop), Mathf.FloorToInt(Random.Range((float)minDrop, (float)maxDrop)));
-            if (GetComponent<CatScript>() != null) GetComponent<CatScript>().Stop();
             // FindObjectOfType<AudioManager>().Stop("hitEnemy");
             // playingSound = false;
             Destroy(this.gameObject);

@@ -131,6 +131,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
     - Class: 89
@@ -260,23 +262,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4952}
     - Class: 114
-      Script: {instanceID: 4966}
+      Script: {instanceID: 4968}
     - Class: 114
-      Script: {instanceID: 5034}
+      Script: {instanceID: 5036}
     - Class: 114
-      Script: {instanceID: 5048}
+      Script: {instanceID: 5050}
     - Class: 114
-      Script: {instanceID: 5082}
+      Script: {instanceID: 5084}
     - Class: 114
-      Script: {instanceID: 5086}
+      Script: {instanceID: 5088}
     - Class: 114
-      Script: {instanceID: 5136}
+      Script: {instanceID: 5138}
     - Class: 114
-      Script: {instanceID: 5160}
+      Script: {instanceID: 5162}
     - Class: 114
-      Script: {instanceID: 5168}
+      Script: {instanceID: 5170}
     - Class: 114
-      Script: {instanceID: 5174}
+      Script: {instanceID: 5176}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -407,9 +409,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4938}
     - Class: 114
-      Script: {instanceID: 5160}
+      Script: {instanceID: 5162}
     - Class: 114
-      Script: {instanceID: 5168}
+      Script: {instanceID: 5170}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -543,7 +545,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4256}
     - Class: 114
-      Script: {instanceID: 5040}
+      Script: {instanceID: 5042}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -608,7 +610,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4256}
     - Class: 114
-      Script: {instanceID: 5040}
+      Script: {instanceID: 5042}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1726,7 +1728,7 @@ ScriptsOnlyBuild:
     className: ToggleControl
   - hash:
       serializedVersion: 2
-      Hash: e1d142f3b5059d9d0a7840a380d632f2
+      Hash: cb3be9127fc4f4a7a8b08c147abe3547
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyScript

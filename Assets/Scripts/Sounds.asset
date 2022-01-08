@@ -65,7 +65,7 @@ MonoBehaviour:
     clips:
     - {fileID: 8300000, guid: 162b9b8e243dfa8448db6980fdd93ae1, type: 3}
     - {fileID: 8300000, guid: 75689f1f56b0ee348aca693ec1cb20f8, type: 3}
-    volume: 0.6
+    volume: 0.4
     pitch: 1
     loop: 1
     activeClip: 0
@@ -98,10 +98,10 @@ MonoBehaviour:
     loopDelay: 0
     coroutineRunning: 0
     playing: 0
-  - name: meow
+  - name: hitEnemy
     clips:
-    - {fileID: 8300000, guid: 7999799379c89da41889ac9a70462823, type: 3}
-    volume: 1
+    - {fileID: 8300000, guid: 3a4986a6cb821734c80842092d783c99, type: 3}
+    volume: 0.5
     pitch: 1
     loop: 1
     activeClip: 0
@@ -110,15 +110,3 @@ MonoBehaviour:
     loopDelay: 0
     coroutineRunning: 0
     playing: 0
-  - name: hitEnemy
-    clips:
-    - {fileID: 8300000, guid: cf26a4ba611377b4db6bed98ae5d61db, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
-    activeClip: 0
-    source: {fileID: 0}
-    playingLoop: 0
-    loopDelay: 0
-    coroutineRunning: 0
-    playing: 1
